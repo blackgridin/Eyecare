@@ -13,15 +13,15 @@ import {
 const DoctorsSection = () => {
   const doctors = [
     {
-      name: "Dr. Rajesh Kumar",
-      designation: "Chief Ophthalmologist & Founder",
-      specialization: ["Cataract Surgery", "LASIK", "Corneal Diseases"],
+      name: "Dr. G. Ramesh Baabu",
+      designation: "Consultant Opthalmologist & Director",
+      specialization: ["Cataract Surgery", "LASIK", "Glaucoma"],
       experience: "16+ Years",
       qualifications: ["MBBS, MS (Ophthalmology)", "Fellowship in Cornea & Refractive Surgery"],
       languages: ["English", "Hindi", "Tamil"],
       successRate: "99.2%",
-      surgeries: "15,000+",
-      image: "/placeholder-doctor-1.jpg"
+      surgeries: "50000+",
+      image: "src/components/ui/madhavf.jpeg"
     },
     {
       name: "Dr. Priya Sharma",
