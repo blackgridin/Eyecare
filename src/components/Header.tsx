@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Phone, Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -21,11 +22,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">V</span>
-            </div>
+            <Image src="/favicon.png" alt="Shivas Eye Care Logo" width={40} height={40} />
             <div>
-              <h1 className="font-poppins font-bold text-xl text-primary">VisionCare</h1>
+              <h1 className="font-poppins font-bold text-xl text-primary">Shivas Eye Care</h1>
               <p className="text-xs text-muted-foreground -mt-1">Eye Clinic</p>
             </div>
           </div>

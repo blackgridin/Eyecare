@@ -1,10 +1,10 @@
-# VisionCare Eye Clinic
+# Shivas Eye Care, Clinic
 
-A modern, responsive website for VisionCare Eye Clinic - providing comprehensive eye care services with over 16 years of excellence.
+A modern, responsive website for Shivas Eye Care, Clinic - providing comprehensive eye care services with over 16 years of excellence.
 
 ## Overview
 
-VisionCare Eye Clinic is a professional healthcare website built to showcase premium eye care services, facilitate appointment bookings, and provide essential information to patients. The site features a clean, accessible design optimized for both desktop and mobile devices.
+Shivas Eye Care, Clinic is a professional healthcare website built to showcase premium eye care services, facilitate appointment bookings, and provide essential information to patients. The site features a clean, accessible design optimized for both desktop and mobile devices.
 
 ## Features
 

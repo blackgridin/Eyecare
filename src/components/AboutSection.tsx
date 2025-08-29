@@ -57,7 +57,7 @@ const AboutSection = () => {
               </h2>
               
               <p className="font-open-sans text-lg text-muted-foreground leading-relaxed">
-                VisionCare Eye Clinic has been at the forefront of ophthalmic care for over 
+                Shivas Eye Care, Clinic has been at the forefront of ophthalmic care for over 
                 two decades. Founded with a mission to provide world-class eye care services, 
                 we combine cutting-edge technology with compassionate treatment.
               </p>

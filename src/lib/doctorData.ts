@@ -24,7 +24,7 @@ export const doctors: Doctor[] = [
     successRate: "99.2%",
     surgeries: "50000+",
     image: "/assets/madhavf.png",
-    bio: "Dr. G. Ramesh Baabu is a highly experienced ophthalmologist with over 16 years of practice. He specializes in advanced cataract surgeries, LASIK procedures, and glaucoma management. As the director of VisionCare Eye Clinic, he is committed to providing excellent patient care and utilizing the latest medical technologies."
+    bio: "Dr. G. Ramesh Baabu is a highly experienced ophthalmologist with over 16 years of practice. He specializes in advanced cataract surgeries, LASIK procedures, and glaucoma management. As the director of Shivas Eye Care, Clinic, he is committed to providing excellent patient care and utilizing the latest medical technologies."
   },
   {
     id: "priya-sharma",

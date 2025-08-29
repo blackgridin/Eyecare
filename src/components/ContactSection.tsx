@@ -18,7 +18,7 @@ const ContactSection = () => {
       icon: MapPin,
       title: "Address",
       details: [
-        "VisionCare Eye Clinic",
+        "Shivas Eye Care, Clinic",
         "123 Medical Center Street",
         "T. Nagar, Chennai - 600017",
         "Tamil Nadu, India"
@@ -48,10 +48,10 @@ const ContactSection = () => {
       icon: Mail,
       title: "Email & Online",
       details: [
-        "info@visioncare.com",
-        "appointments@visioncare.com",
-        "emergency@visioncare.com",
-        "www.visioncare.com"
+        "info@shivaseyecare.com",
+        "appointments@shivaseyecare.com",
+        "emergency@shivaseyecare.com",
+        "www.shivaseyecare.com"
       ]
     }
   ];

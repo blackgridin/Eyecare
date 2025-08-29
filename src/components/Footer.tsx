@@ -40,7 +40,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-lg">V</span>
               </div>
               <div>
-                <h3 className="font-poppins font-bold text-xl">VisionCare</h3>
+                <h3 className="font-poppins font-bold text-xl">Shivas Eye Care</h3>
                 <p className="text-sm text-muted -mt-1">Eye Clinic</p>
               </div>
             </div>
@@ -122,7 +122,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="font-open-sans text-muted text-sm">
-                  info@visioncare.com
+                  info@shivaseyecare.com
                 </span>
               </div>
 
@@ -158,7 +158,7 @@ const Footer = () => {
         <div className="border-t border-muted/20 pt-8 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="font-open-sans text-muted text-sm">
-              © {new Date().getFullYear()} VisionCare Eye Clinic. All rights reserved.
+              © {new Date().getFullYear()} Shivas Eye Care, Clinic. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-muted hover:text-background transition-colors">
