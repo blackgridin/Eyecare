@@ -22,8 +22,8 @@ const ContactSection = () => {
       title: "Address",
       details: [
         "Shivas Eye Care, Clinic",
-        "123 Medical Center Street",
-        "T. Nagar, Chennai - 600017",
+        "134/1818, 13th Main Rd, Thiruvalluvar Colony,",
+        "Anna Nagar, Chennai, Tamil Nadu 600040",
         "Tamil Nadu, India"
       ]
     },
@@ -31,10 +31,9 @@ const ContactSection = () => {
       icon: Phone,
       title: "Phone Numbers",
       details: [
-        "Main: +91-98765-43210",
-        "Emergency: +91-98765-43211",
-        "Appointment: +91-98765-43212",
-        "International: +91-44-2815-xxxx"
+        "Main: +91-9840088522",
+        "Emergency: +91-9840174184",
+        "Appointment: +91-9363015155",
       ]
     },
     {
@@ -51,16 +50,14 @@ const ContactSection = () => {
       icon: Mail,
       title: "Email & Online",
       details: [
-        "info@shivaseyecare.com",
-        "appointments@shivaseyecare.com",
-        "emergency@shivaseyecare.com",
-        "www.shivaseyecare.com"
+        "shivaseyecare@gmail.com",
+        
       ]
     }
   ];
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-muted/30">
+    <section id="contact" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

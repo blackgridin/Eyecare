@@ -1603,6 +1603,9 @@ video {
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
+.bg-gradient-to-tl {
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
 .from-background {
   --tw-gradient-from: hsl(var(--background)) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(var(--background) / 0) var(--tw-gradient-to-position);
@@ -1611,6 +1614,11 @@ video {
 .from-secondary\/20 {
   --tw-gradient-from: hsl(var(--secondary) / 0.2) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(var(--secondary) / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-\[\#F6FCFF\] {
+  --tw-gradient-from: #F6FCFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(246 252 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .via-background {
@@ -1622,6 +1630,9 @@ video {
 }
 .to-secondary\/20 {
   --tw-gradient-to: hsl(var(--secondary) / 0.2) var(--tw-gradient-to-position);
+}
+.to-\[\#eef9ff\] {
+  --tw-gradient-to: #eef9ff var(--tw-gradient-to-position);
 }
 .fill-current {
   fill: currentColor;

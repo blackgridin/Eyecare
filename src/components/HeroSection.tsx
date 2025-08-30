@@ -11,7 +11,7 @@ import { ScanLine } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-br from-background via-background to-secondary/20 py-16 lg:py-24">
+    <section id="home" className="relative bg-gradient-to-br from-[#F6FCFF] to-[#eef9ff] py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -87,7 +87,7 @@ const HeroSection = () => {
 </div>
 
                 <p className="text-xs text-muted-foreground">
-                  Or call us directly: <span className="font-medium text-primary">+91-98765-43210</span>
+                  Or call us directly: <span className="font-medium text-primary">+91-9840088522</span>
                 </p>
               </div>
             </div>

@@ -51,20 +51,7 @@ const Footer = () => {
             </p>
 
             {/* Social Links */}
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="sm" className="text-muted hover:text-background">
-                <Facebook className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted hover:text-background">
-                <Instagram className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted hover:text-background">
-                <Youtube className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted hover:text-background">
-                <Twitter className="w-5 h-5" />
-              </Button>
-            </div>
+           
           </div>
 
           {/* Quick Links */}
@@ -105,8 +92,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div className="font-open-sans text-muted text-sm">
-                  <p>123 Medical Center Street</p>
-                  <p>T. Nagar, Chennai - 600017</p>
+                  <p>134/1818, 13th Main Rd, Thiruvalluvar Colony,</p>
+                  <p>Anna Nagar, Chennai, Tamil Nadu 600040</p>
                   <p>Tamil Nadu, India</p>
                 </div>
               </div>
@@ -114,15 +101,15 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="font-open-sans text-muted text-sm">
-                  <p>+91-98765-43210</p>
-                  <p className="text-xs">Emergency: +91-98765-43211</p>
+                  <p>+91-9840174184</p>
+                  <p className="text-xs">Emergency: +91-9363015155</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="font-open-sans text-muted text-sm">
-                  info@shivaseyecare.com
+                  shivaseyecare@gmail.com
                 </span>
               </div>
 
@@ -131,7 +118,6 @@ const Footer = () => {
                 <div className="font-open-sans text-muted text-sm">
                   <p>Mon-Sat: 9AM - 7PM</p>
                   <p>Sunday: 10AM - 5PM</p>
-                  <p className="text-primary text-xs font-medium">Emergency: 24/7</p>
                 </div>
               </div>
             </div>
@@ -139,20 +125,7 @@ const Footer = () => {
         </div>
 
         {/* WhatsApp CTA */}
-        <div className="border-t border-muted/20 pt-8 mt-12">
-          <div className="bg-primary/10 rounded-lg p-6 text-center">
-            <h4 className="font-poppins font-semibold text-background mb-2">
-              Book Your Appointment Now
-            </h4>
-            <p className="font-open-sans text-muted mb-4">
-              Scan QR code or click below to book via WhatsApp
-            </p>
-            <Button className="bg-success hover:bg-success/90 text-white">
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp Booking
-            </Button>
-          </div>
-        </div>
+        
 
         {/* Bottom Bar */}
         <div className="border-t border-muted/20 pt-8 mt-12">
