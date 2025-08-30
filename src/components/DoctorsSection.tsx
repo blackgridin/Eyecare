@@ -7,7 +7,8 @@ import {
   Calendar, 
   MessageCircle,
   Star,
-  BookOpen
+  BookOpen,
+  ChevronRight
 } from "lucide-react";
 
 const DoctorsSection = () => {
@@ -19,14 +20,13 @@ const DoctorsSection = () => {
       experience: "16+ Years",
       qualifications: ["MBBS, MS (Ophthalmology)", "Fellowship in Cornea & Refractive Surgery"],
       languages: ["English", "Hindi", "Tamil"],
-      successRate: "99.2%",
       surgeries: "50000+",
       image: "src/components/ui/madhavf.jpeg"
     }
   ];
  
   return (
-    <section id="doctors" className="py-16 lg:py-24 bg-white">
+    <section id="doctors" className="py-16 lg:py-24 bg-[#F6FCFF]">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
 
@@ -96,8 +96,7 @@ const DoctorsSection = () => {
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-4 p-4 bg-muted/50 rounded-lg">
                     <div className="text-center">
-                      <div className="font-bold text-primary">{doctor.successRate}</div>
-                      <div className="text-xs text-muted-foreground">Success Rate</div>
+                      <div className="text-xs text-muted-foreground">With extensive experience in operations and diagonostics</div>
                     </div>
                     <div className="text-center">
                       <div className="font-bold text-primary">{doctor.surgeries}</div>
@@ -130,8 +129,8 @@ const DoctorsSection = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-            <Award className="w-5 h-5 mr-2" />
-            View All Doctors
+            <ChevronRight className="w-5 h-5 mr-2" />
+            More Info
           </Button>
         </div>
       </div>

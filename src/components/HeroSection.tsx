@@ -11,14 +11,12 @@ import { ScanLine } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-br from-[#F6FCFF] to-[#eef9ff] py-16 lg:py-24">
+    <section id="home" className="relative bg-[#F6FCFF] py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-6">
-            <Badge className="bg-success/10 text-success border-success/20 font-medium">
-              NABH Accredited • ISO 9001:2015 Certified
-            </Badge>
+            
             
             <h1 className="font-poppins font-bold text-4xl lg:text-6xl text-foreground leading-tight">
               Your Vision, 
@@ -40,10 +38,7 @@ const HeroSection = () => {
                 <div className="text-2xl font-bold text-primary">16+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">98.5%</div>
-                <div className="text-sm text-muted-foreground">Success Rate</div>
-              </div>
+              
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">24/7</div>
                 <div className="text-sm text-muted-foreground">Emergency Care</div>

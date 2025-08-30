@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+import nabbImage from "./nabb.png";
 import { 
   Award, 
   Users, 
@@ -36,16 +38,16 @@ const AboutSection = () => {
   const stats = [
     { number: "16+", label: "Years of Excellence" },
     { number: "50,000+", label: "Successful Surgeries" },
-    { number: "98.5%", label: "Success Rate" },
-    { number: "24/7", label: "Emergency Support" }
+    { number: "A+", label: "Highly Rated" }
   ];
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-white">
+    <section id="about" className="py-16 lg:py-24 bg-[#F6FCFF]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-6">
+          
+          <div className="space-y-6 -mt-[250px]">
             <div>
               <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">
                 Established 2002
@@ -57,9 +59,7 @@ const AboutSection = () => {
               </h2>
               
               <p className="font-open-sans text-lg text-muted-foreground leading-relaxed">
-                Shivas Eye Care, Clinic has been at the forefront of ophthalmic care for over 
-                two decades. Founded with a mission to provide world-class eye care services, 
-                we combine cutting-edge technology with compassionate treatment.
+                Shivas Eye Care:  With over 16 years of dedicated ophthalmology experience and a track record of more than 50,000 successful surgeries, we are committed to providing patients with exceptional consulting services and the best possible care. Our advanced technology and transparent procedures ensures a positive and confident patient experience.
               </p>
             </div>
 
@@ -86,7 +86,7 @@ const AboutSection = () => {
                 <div className="flex items-center space-x-3">
                   <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                   <span className="font-open-sans text-muted-foreground">
-                    <strong className="text-foreground">Accessibility:</strong> 24/7 emergency care and multiple booking options for your convenience
+                    <strong className="text-foreground">Recomended:</strong> Highly recommended by thousands of satisfied patients
                   </span>
                 </div>
               </div>
@@ -118,8 +118,14 @@ const AboutSection = () => {
                 <Card key={index} className="border-border hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <achievement.icon className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                        {achievement.title === "NABH Accredited" ? (
+                          <Image src={nabbImage} alt="NABB" width={48} height={48} />
+                        ) : (
+                          <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <achievement.icon className="w-6 h-6 text-primary" />
+                          </div>
+                        )}
                       </div>
                       <div>
                         <h4 className="font-poppins font-semibold text-foreground mb-2">

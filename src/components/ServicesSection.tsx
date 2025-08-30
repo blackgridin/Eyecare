@@ -7,7 +7,8 @@ import {
   Heart, 
   Baby, 
   Glasses,
-  ArrowRight
+  ArrowRight,
+  CircleGauge
 } from "lucide-react";
 
 const ServicesSection = () => {
@@ -31,7 +32,7 @@ const ServicesSection = () => {
       features: ["Femtosecond Technology", "Custom Wavefront", "Lifetime Care"]
     },
     {
-      icon: Heart,
+      icon: CircleGauge,
       title: "Glaucoma Treatment",
       description: "Early detection and management of glaucoma",
       features: ["OCT Scanning", "Medical Management", "Surgical Options"]
@@ -51,7 +52,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-16 lg:py-24 bg-white">
+    <section id="services" className="py-16 lg:py-24 bg-[#F6FCFF]">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
