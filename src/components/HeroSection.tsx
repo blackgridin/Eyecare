@@ -1,6 +1,10 @@
+
+import Image from 'next/image';
+import qrCodeImage from './qrpng.png';
+
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Eye, Award, Users, Calendar } from "lucide-react";
 import { MessageCircle } from 'lucide-react';
 import { ScanLine } from 'lucide-react';
 
@@ -71,17 +75,16 @@ const HeroSection = () => {
                 <p className="text-muted-foreground text-sm">
                   Scan QR code to book appointment via WhatsApp
                 </p>
-
                 {/* QR Code Placeholder */}
-                <div className="w-48 h-48 bg-gray-100 rounded-lg flex items-center justify-center mx-auto border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <Users className="w-6 h-6 text-primary" />
-                    </div>
-                    <div className="text-xs text-gray-500">WhatsApp QR Code</div>
-                    <div className="text-xs text-gray-400">+91-98765-43210</div>
-                  </div>
-                </div>
+<div className="w-48 h-48 rounded-lg flex items-center justify-center mx-auto">
+  <Image
+    src={qrCodeImage} // Use the imported variable here
+    alt="WhatsApp QR Code for booking"
+    width={192}
+    height={192}
+    className="rounded-lg" 
+  />
+</div>
 
                 <p className="text-xs text-muted-foreground">
                   Or call us directly: <span className="font-medium text-primary">+91-98765-43210</span>

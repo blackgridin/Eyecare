@@ -1,3 +1,6 @@
+
+import Image from 'next/image';
+import qrCodeImage from './qrpng.png';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -121,14 +124,14 @@ const ContactSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <Card className="border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer">
                 <CardContent className="p-6 text-center">
-                  <MessageCircle className="w-8 h-8 text-primary mx-auto mb-3" />
+                  <Mail className="w-8 h-8 text-primary mx-auto mb-3" />
                   <h4 className="font-poppins font-semibold text-foreground mb-2">
-                    WhatsApp Booking
+                    Mail us your queries
                   </h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Instant appointment confirmation
+                    Immidiate response via email
                   </p>
-                  <Badge className="bg-success text-white">Available Now</Badge>
+                  <Badge className="bg-primary text-primary-foreground">Available Now</Badge>
                 </CardContent>
               </Card>
 
@@ -155,20 +158,23 @@ const ContactSection = () => {
                 
                 {/* QR Code Placeholder */}
                 <div className="w-40 h-40 bg-gray-100 rounded-lg flex items-center justify-center mx-auto border-2 border-dashed border-gray-300 mb-4">
-                  <div className="text-center">
-                    <MessageCircle className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-xs text-gray-500">WhatsApp QR</div>
+                  <div className="w-48 h-48 rounded-lg flex items-center justify-center mx-auto">
+<Image
+    src={qrCodeImage} // Use the imported variable here
+    alt="WhatsApp QR Code for booking"
+    width={192}
+    height={192}
+    className="rounded-lg" 
+  />
+</div>
                   </div>
-                </div>
+
 
                 <p className="text-sm text-muted-foreground mb-4">
                   Scan with your phone camera to open WhatsApp
                 </p>
                 
-                <Button className="w-full bg-success hover:bg-success/90">
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  Open WhatsApp
-                </Button>
+                
               </CardContent>
             </Card>
           </div>

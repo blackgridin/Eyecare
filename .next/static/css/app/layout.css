@@ -1179,6 +1179,9 @@ video {
 .max-w-xl {
   max-width: 36rem;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1821,6 +1824,9 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-black {
+  font-weight: 900;
 }
 .italic {
   font-style: italic;
@@ -3331,8 +3337,17 @@ All colors MUST be HSL.
 
 @media (min-width: 1024px) {
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:min-h-\[70vh\] {
+    min-height: 70vh;
   }
 
   .lg\:grid-cols-2 {
@@ -3345,6 +3360,10 @@ All colors MUST be HSL.
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-end {

@@ -22,42 +22,22 @@ const DoctorsSection = () => {
       successRate: "99.2%",
       surgeries: "50000+",
       image: "src/components/ui/madhavf.jpeg"
-    },
-    {
-      name: "Dr. Priya Sharma",
-      designation: "Senior Consultant - Retina Specialist",
-      specialization: ["Diabetic Retinopathy", "Retinal Detachment", "Macular Disorders"],
-      experience: "12+ Years",
-      qualifications: ["MBBS, MS, DNB (Ophthalmology)", "Fellowship in Vitreoretinal Surgery"],
-      languages: ["English", "Hindi", "Telugu"],
-      successRate: "97.8%",
-      surgeries: "8,500+",
-      image: "/placeholder-doctor-2.jpg"
-    },
-    {
-      name: "Dr. Arun Patel",
-      designation: "Consultant - Glaucoma & Pediatric Ophthalmology",
-      specialization: ["Glaucoma Management", "Pediatric Eye Care", "Squint Surgery"],
-      experience: "10+ Years",
-      qualifications: ["MBBS, MS (Ophthalmology)", "Fellowship in Glaucoma"],
-      languages: ["English", "Hindi", "Gujarati"],
-      successRate: "98.5%",
-      surgeries: "6,200+",
-      image: "/placeholder-doctor-3.jpg"
     }
   ];
-
+ 
   return (
     <section id="doctors" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
+
+    
+
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-foreground mb-4">
-            Meet Our Expert Eye Specialists
+            Meet Our Expert Eye Specialist
           </h2>
           <p className="font-open-sans text-lg text-muted-foreground">
-            Our team of highly qualified ophthalmologists brings decades of combined experience 
-            and expertise in advanced eye care treatments and surgeries.
+            Our highly qualified ophthalmologist brings extensive experience and expertise in advanced eye care treatments and surgeries.
           </p>
         </div>
 
