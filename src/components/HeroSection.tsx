@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Eye, Award, Users, Calendar } from "lucide-react";
+import { MessageCircle } from 'lucide-react';
+import { ScanLine } from 'lucide-react';
+
 
 const HeroSection = () => {
   return (
@@ -46,13 +49,10 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 font-medium">
-                <Calendar className="w-5 h-5 mr-2" />
-                Book Appointment
+                <MessageCircle />
+                Book via WhatsApp
               </Button>
-              <Button variant="outline" size="lg" className="font-medium">
-                <Eye className="w-5 h-5 mr-2" />
-                Our Services
-              </Button>
+              
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const HeroSection = () => {
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-border max-w-sm w-full">
               <div className="text-center space-y-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                  <Award className="w-8 h-8 text-primary" />
+                  <ScanLine />
                 </div>
                 
                 <h3 className="font-poppins font-semibold text-xl text-foreground">

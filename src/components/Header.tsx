@@ -42,7 +42,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Contact & WhatsApp */}
+          {/* Contact & WhatsApp 
           <div className="hidden lg:flex items-center space-x-4">
             <div className="text-right">
               <div className="flex items-center space-x-2 text-sm font-medium text-foreground">
@@ -56,7 +56,7 @@ const Header = () => {
               WhatsApp
             </Button>
           </div>
-
+            */}
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
