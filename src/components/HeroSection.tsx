@@ -40,8 +40,8 @@ const HeroSection = () => {
               </div>
               
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">24/7</div>
-                <div className="text-sm text-muted-foreground">Emergency Care</div>
+                <div className="text-2xl font-bold text-primary">NABH</div>
+                <div className="text-sm text-muted-foreground">Accreddited </div>
               </div>
             </div>
 
