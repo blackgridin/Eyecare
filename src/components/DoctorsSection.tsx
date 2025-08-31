@@ -106,7 +106,7 @@ const DoctorsSection = () => {
           <div className="lg:col-span-3 space-y-8 pt-6 lg:pt-0">
             <h3 className="text-3xl font-bold text-gray-900">A Profile of Excellence</h3>
             <p className="text-sm text-muted-foreground">
-                As the Director and Chief Consultant Ophthalmologist, Dr. G. Ramesh Baabu is the cornerstone of our clinic's expertise and commitment to quality care.
+                As the Director and Chief Consultant Ophthalmologist, Dr. G. Ramesh Baabu is the cornerstone of our clinic&apos;s expertise and commitment to quality care.
             </p>
             
             <Card className="bg-gray-50/70">

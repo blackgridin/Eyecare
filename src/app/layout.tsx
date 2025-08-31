@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-open-sans",
+});
 
 export const metadata: Metadata = {
   title: "Shivs Eye Care Clinic",
   description: "Leading eye clinic with 16+ years experience. Expert cataract surgery, LASIK, glaucoma treatment. Book appointment via WhatsApp.",
-  authors: [{ name: "Suck my dick" }],
+  
   openGraph: {
     title: "Shivs Eye Care Clinic",
     description: "Eyecare for everyone",
@@ -31,11 +41,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className}>{children}<Analytics /></body>
+      <body className={`${inter.variable} ${poppins.variable} ${openSans.variable} font-sans`}>{children}<Analytics /></body>
     </html>
   );
 }

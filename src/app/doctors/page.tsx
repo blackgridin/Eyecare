@@ -89,7 +89,7 @@ const DoctorsPage = () => {
                     <div className="mt-6 space-y-4 text-gray-700">
                         <h4 className="text-lg font-semibold text-gray-900 border-b pb-2">Professional Profile</h4>
                         <p>
-                            As the Director and Chief Consultant Ophthalmologist, Dr. Baabu is the cornerstone of our clinic's expertise.
+                            As the Director and Chief Consultant Ophthalmologist, Dr. Baabu is the cornerstone of our clinic&apos;s expertise.
                         </p>
                         
                         <div className="flex items-start space-x-3">
