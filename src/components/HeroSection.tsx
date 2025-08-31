@@ -1,4 +1,4 @@
-
+"use client";
 import Image from 'next/image';
 import qrCodeImage from './qrpng.png';
 
@@ -47,7 +47,7 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 font-medium">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 font-medium" onClick={() => window.open('https://wa.me/919363015155', '_blank')}>
                 <MessageCircle />
                 Book via WhatsApp
               </Button>

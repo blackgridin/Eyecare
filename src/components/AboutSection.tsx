@@ -98,22 +98,28 @@ const AboutSection = () => {
               </h3>
               
               <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-primary flex-shrink-0" />
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
+                    <Heart className="w-5 h-5 text-primary" />
+                  </div>
                   <span className="font-open-sans text-muted-foreground">
                     <strong className="text-foreground">Compassionate Care:</strong> Every patient receives personalized attention and empathetic treatment
                   </span>
                 </div>
                 
-                <div className="flex items-center space-x-3">
-                  <Shield className="w-5 h-5 text-primary flex-shrink-0" />
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-5 h-5 text-primary" />
+                  </div>
                   <span className="font-open-sans text-muted-foreground">
                     <strong className="text-foreground">Clinical Excellence:</strong> Maintaining the highest standards of medical practice and surgical precision
                   </span>
                 </div>
                 
-                <div className="flex items-center space-x-3">
-                  <Clock className="w-5 h-5 text-primary flex-shrink-0" />
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 text-primary" />
+                  </div>
                   <span className="font-open-sans text-muted-foreground">
                     <strong className="text-foreground">Recomended:</strong> Highly recommended by thousands of satisfied patients
                   </span>
@@ -194,13 +200,15 @@ const AboutSection = () => {
             <Marquee pauseOnHover>
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="w-[350px] shrink-0 mx-4 bg-white">
-                  <CardContent className="p-6">
-                    <p className="font-open-sans text-muted-foreground italic mb-4">
-                      &quot;{testimonial.quote}&quot;
-                    </p>
-                    <div className="text-right">
-                      <div className="font-poppins font-semibold text-foreground">{testimonial.name}</div>
-                      <div className="font-open-sans text-sm text-muted-foreground">{testimonial.title}</div>
+                  <CardContent className="p-6 h-full">
+                    <div className="flex h-full flex-col">
+                      <p className="font-open-sans text-muted-foreground italic mb-4">
+                        &quot;{testimonial.quote}&quot;
+                      </p>
+                      <div className="mt-auto text-right">
+                        <div className="font-poppins font-semibold text-foreground">{testimonial.name}</div>
+                        <div className="font-open-sans text-sm text-muted-foreground">{testimonial.title}</div>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>

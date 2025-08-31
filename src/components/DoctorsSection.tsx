@@ -1,29 +1,33 @@
+"use client";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Image from 'next/image';
-import { 
-  GraduationCap, 
+import Image from "next/image";
+import {
+  GraduationCap,
   MessageCircle,
   BookOpen,
   ChevronRight,
   Medal,
-  Stethoscope
+  Stethoscope,
 } from "lucide-react";
 import madhavfImage from "./ui/madhavf.jpeg";
 
 const DoctorsSection = () => {
   const doctor = {
-      name: "Dr. G. Ramesh Baabu",
-      designation: "Consultant Opthalmologist & Director",
-      specialization: ["Cataract Surgery", "LASIK", "Glaucoma"],
-      experience: "16+ Years",
-      qualifications: ["MBBS, MS (Ophthalmology)", "Fellowship in Cornea & Refractive Surgery"],
-      languages: ["English", "Hindi", "Tamil"],
-      surgeries: "50000+",
-      image: madhavfImage
+    name: "Dr. G. Ramesh Baabu",
+    designation: "Consultant Opthalmologist & Director",
+    specialization: ["Cataract Surgery", "LASIK", "Glaucoma"],
+    experience: "16+ Years",
+    qualifications: [
+      "MBBS, MS (Ophthalmology)",
+      "Fellowship in Cornea & Refractive Surgery",
+    ],
+    languages: ["English", "Hindi", "Tamil"],
+    surgeries: "50000+",
+    image: madhavfImage,
   };
- 
+
   return (
     <section id="doctors" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
@@ -32,7 +36,8 @@ const DoctorsSection = () => {
             Meet Our Expert Eye Specialist
           </h2>
           <p className="font-open-sans text-lg text-muted-foreground">
-            Our highly qualified ophthalmologist brings extensive experience and expertise in advanced eye care treatments and surgeries.
+            Our highly qualified ophthalmologist brings extensive experience and
+            expertise in advanced eye care treatments and surgeries.
           </p>
         </div>
 
@@ -82,13 +87,14 @@ const DoctorsSection = () => {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div className="text-sm text-muted-foreground pt-2">
-                    <span className="font-medium">Languages:</span> {doctor.languages.join(", ")}
+                    <span className="font-medium">Languages:</span>{" "}
+                    {doctor.languages.join(", ")}
                   </div>
 
                   <div className="flex gap-2 pt-4">
-                    <Button size="sm" className="flex-1">
+                    <Button size="sm" className="flex-1" onClick={() => window.open('https://wa.me/919363015155', '_blank')}>
                       <MessageCircle className="w-4 h-4 mr-2" />
                       Book Appointment
                     </Button>
@@ -104,48 +110,63 @@ const DoctorsSection = () => {
 
           {/* Right Column: Description */}
           <div className="lg:col-span-3 space-y-8 pt-6 lg:pt-0">
-            <h3 className="text-3xl font-bold text-gray-900">A Profile of Excellence</h3>
+            <h3 className="text-3xl font-bold text-gray-900">
+              A Profile of Excellence
+            </h3>
             <p className="text-sm text-muted-foreground">
-                As the Director and Chief Consultant Ophthalmologist, Dr. G. Ramesh Baabu is the cornerstone of our clinic&apos;s expertise and commitment to quality care.
+              As the Director and Chief Consultant Ophthalmologist, Dr. G.
+              Ramesh Baabu is the cornerstone of our clinic&apos;s expertise and
+              commitment to quality care.
             </p>
-            
+
             <Card className="bg-gray-50/70">
-                <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                        <Medal className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                        <div>
-                            <h4 className="text-lg font-semibold">Vast Surgical Experience</h4>
-                            <p className="text-sm text-muted-foreground">
-                                He has performed over <span className="font-bold">50,000 surgeries</span>, including complex procedures for cataracts, LASIK, and glaucoma.
-                            </p>
-                        </div>
-                    </div>
-                </CardContent>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <Medal className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-lg font-semibold">
+                      Vast Surgical Experience
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      He has performed over{" "}
+                      <span className="font-bold">50,000 surgeries</span>,
+                      including complex procedures for cataracts, LASIK, and
+                      glaucoma.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
             </Card>
 
             <Card className="bg-gray-50/70">
-                <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                        <Stethoscope className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                        <div>
-                            <h4 className="text-lg font-semibold">Distinguished Career</h4>
-                            <p className="text-sm text-muted-foreground">
-                                Formerly a visiting Consultant at ICF Hospital, Chennai, and a Consultant at both The Hindu Mission Hospital in Tambaram & Rajan Eye Care Hospital in T.Nagar.
-                            </p>
-                        </div>
-                    </div>
-                </CardContent>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <Stethoscope className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-lg font-semibold">
+                      Distinguished Career
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Formerly a visiting Consultant at ICF Hospital, Chennai,
+                      and a Consultant at both The Hindu Mission Hospital in
+                      Tambaram & Rajan Eye Care Hospital in T.Nagar.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
             </Card>
-            
-            <p className="text-sm text-muted-foreground space-y-5"> 
+
+            <p className="text-sm text-muted-foreground space-y-5">
               <i>
-                His dedication to adopting advanced technology and transparent procedures ensures a positive and confident patient experience, making him one of the most trusted names in ophthalmology.
-                </i>
+                His dedication to adopting advanced technology and transparent
+                procedures ensures a positive and confident patient experience,
+                making him one of the most trusted names in ophthalmology.
+              </i>
             </p>
 
             <Button size="lg" className="mt-4">
-                Learn More About Our Clinic
-                <ChevronRight className="w-5 h-5 ml-2" />
+              Learn More About Our Clinic
+              <ChevronRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
         </div>
