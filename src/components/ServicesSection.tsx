@@ -106,7 +106,7 @@ const ServicesSection = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <Button size="lg" className="bg-primary hover:bg-primary/90">
-            View All Services
+            View Gallery 
           </Button>
         </div>
       </div>

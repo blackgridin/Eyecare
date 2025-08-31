@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import nabbImage from "./nabb.png";
+import { Marquee } from "@/components/ui/marquee"; // Import Marquee
 import { 
   Award, 
   Users, 
@@ -39,6 +40,34 @@ const AboutSection = () => {
     { number: "16+", label: "Years of Excellence" },
     { number: "50,000+", label: "Successful Surgeries" },
     { number: "A+", label: "Highly Rated" }
+  ];
+
+  const testimonials = [
+    {
+      name: "Ramesh Kumar",
+      title: "Cataract Surgery Patient",
+      quote: "The care I received at Shivas Eye Care was exceptional. The doctors are not only skilled but also very compassionate. My vision has never been better!",
+    },
+    {
+      name: "Sunita Sharma",
+      title: "Glaucoma Patient",
+      quote: "I've been managing my glaucoma with them for years. The team is always so supportive and uses the latest technology. I feel I'm in the best hands.",
+    },
+    {
+      name: "Amit Patel",
+      title: "LASIK Patient",
+      quote: "Getting LASIK here was the best decision I've ever made. The procedure was quick, painless, and the results are phenomenal. I highly recommend them!",
+    },
+    {
+      name: "Priya Singh",
+      title: "Parent of a pediatric patient",
+      quote: "They were amazing with my young daughter. The pediatric ophthalmologist was so patient and made her feel comfortable. A great experience for us.",
+    },
+    {
+      name: "Vijay Reddy",
+      title: "Diabetic Retinopathy Patient",
+      quote: "The comprehensive approach to my diabetic eye care has been a game-changer. They monitor my condition closely and provide the best treatment.",
+    },
   ];
 
   return (
@@ -153,6 +182,32 @@ const AboutSection = () => {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+        
+        {/* Testimonials */}
+        <div className="mt-24">
+          <h3 className="font-poppins font-semibold text-3xl text-foreground text-center mb-12">
+            What Our Patients Say
+          </h3>
+          <div className="relative">
+            <Marquee pauseOnHover>
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="w-[350px] shrink-0 mx-4 bg-white">
+                  <CardContent className="p-6">
+                    <p className="font-open-sans text-muted-foreground italic mb-4">
+                      &quot;{testimonial.quote}&quot;
+                    </p>
+                    <div className="text-right">
+                      <div className="font-poppins font-semibold text-foreground">{testimonial.name}</div>
+                      <div className="font-open-sans text-sm text-muted-foreground">{testimonial.title}</div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </Marquee>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#F6FCFF] to-transparent"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#F6FCFF] to-transparent"></div>
           </div>
         </div>
       </div>
