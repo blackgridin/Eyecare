@@ -148,8 +148,8 @@ const AboutSection = () => {
                   Our Mission
                 </h4>
                 <p className="font-open-sans text-muted-foreground italic">
-                  "To provide accessible, comprehensive, and compassionate eye care services 
-                  that restore and preserve vision, enabling our patients to live life to the fullest."
+                  &quot;To provide accessible, comprehensive, and compassionate eye care services 
+                  that restore and preserve vision, enabling our patients to live life to the fullest.&quot;
                 </p>
               </CardContent>
             </Card>
