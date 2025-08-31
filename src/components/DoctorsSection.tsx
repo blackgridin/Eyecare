@@ -1,19 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Image from 'next/image';
 import { 
-  Award, 
   GraduationCap, 
-  Calendar, 
   MessageCircle,
-  Star,
   BookOpen,
-  ChevronRight
+  ChevronRight,
+  Medal,
+  Stethoscope
 } from "lucide-react";
+import madhavfImage from "./ui/madhavf.jpeg";
 
 const DoctorsSection = () => {
-  const doctors = [
-    {
+  const doctor = {
       name: "Dr. G. Ramesh Baabu",
       designation: "Consultant Opthalmologist & Director",
       specialization: ["Cataract Surgery", "LASIK", "Glaucoma"],
@@ -21,17 +21,12 @@ const DoctorsSection = () => {
       qualifications: ["MBBS, MS (Ophthalmology)", "Fellowship in Cornea & Refractive Surgery"],
       languages: ["English", "Hindi", "Tamil"],
       surgeries: "50000+",
-      image: "src/components/ui/madhavf.jpeg"
-    }
-  ];
+      image: madhavfImage
+  };
  
   return (
-    <section id="doctors" className="py-16 lg:py-24 bg-[#F6FCFF]">
+    <section id="doctors" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Header */}
-
-    
-
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-foreground mb-4">
             Meet Our Expert Eye Specialist
@@ -41,97 +36,116 @@ const DoctorsSection = () => {
           </p>
         </div>
 
-        {/* Doctors Grid */}
-        <div className="grid lg:grid-cols-3 gap-8">
-          {doctors.map((doctor, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-border overflow-hidden">
-              <div className="relative">
-                {/* Doctor Image Placeholder */}
-                <div className="h-64 bg-gradient-to-br from-secondary/20 to-primary/10 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
-                    <GraduationCap className="w-16 h-16 text-primary" />
-                  </div>
-                </div>
-                
-                {/* Experience Badge */}
-                <Badge className="absolute top-4 right-4 bg-primary text-white">
+        <div className="grid lg:grid-cols-5 gap-12 items-start">
+          {/* Left Column: Doctor Card */}
+          <div className="lg:col-span-2">
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-border overflow-hidden">
+              <div className="relative h-80 w-full">
+                <Image
+                  src={doctor.image}
+                  alt={doctor.name}
+                  fill
+                  className="object-cover"
+                />
+                <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">
                   {doctor.experience}
                 </Badge>
               </div>
 
               <CardContent className="p-6">
                 <div className="space-y-4">
-                  {/* Doctor Info */}
                   <div>
-                    <h3 className="font-poppins font-bold text-xl text-foreground mb-1">
+                    <h3 className="font-poppins font-bold text-2xl text-foreground mb-1">
                       {doctor.name}
                     </h3>
-                    <p className="font-open-sans text-primary font-medium mb-2">
+                    <p className="font-open-sans text-primary font-medium mb-3">
                       {doctor.designation}
                     </p>
                   </div>
 
-                  {/* Specializations */}
                   <div className="flex flex-wrap gap-2">
                     {doctor.specialization.map((spec, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs">
+                      <Badge key={idx} variant="secondary">
                         {spec}
                       </Badge>
                     ))}
                   </div>
 
-                  {/* Qualifications */}
-                  <div className="space-y-2">
+                  <div className="space-y-2 pt-2">
                     <div className="flex items-center text-sm text-muted-foreground">
-                      <GraduationCap className="w-4 h-4 mr-2" />
+                      <GraduationCap className="w-4 h-4 mr-2 flex-shrink-0" />
                       <span className="font-medium">Education:</span>
                     </div>
-                    {doctor.qualifications.map((qual, idx) => (
-                      <p key={idx} className="text-sm text-muted-foreground ml-6">
-                        • {qual}
-                      </p>
-                    ))}
+                    <ul className="list-disc list-inside pl-2 text-sm text-muted-foreground">
+                      {doctor.qualifications.map((qual, idx) => (
+                        <li key={idx}>{qual}</li>
+                      ))}
+                    </ul>
                   </div>
-
-                  {/* Stats */}
-                  <div className="grid grid-cols-2 gap-4 p-4 bg-muted/50 rounded-lg">
-                    <div className="text-center">
-                      <div className="text-xs text-muted-foreground">With extensive experience in operations and diagonostics</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="font-bold text-primary">{doctor.surgeries}</div>
-                      <div className="text-xs text-muted-foreground">Surgeries</div>
-                    </div>
-                  </div>
-
-                  {/* Languages */}
-                  <div className="text-sm text-muted-foreground">
+                  
+                  <div className="text-sm text-muted-foreground pt-2">
                     <span className="font-medium">Languages:</span> {doctor.languages.join(", ")}
                   </div>
 
-                  {/* Action Buttons */}
                   <div className="flex gap-2 pt-4">
-                    <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
+                    <Button size="sm" className="flex-1">
                       <MessageCircle className="w-4 h-4 mr-2" />
-                      Consult
+                      Book Appointment
                     </Button>
                     <Button variant="outline" size="sm" className="flex-1">
                       <BookOpen className="w-4 h-4 mr-2" />
-                      Profile
+                      View Profile
                     </Button>
                   </div>
                 </div>
               </CardContent>
             </Card>
-          ))}
-        </div>
+          </div>
 
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-            <ChevronRight className="w-5 h-5 mr-2" />
-            More Info
-          </Button>
+          {/* Right Column: Description */}
+          <div className="lg:col-span-3 space-y-6 pt-6 lg:pt-0">
+            <h3 className="text-3xl font-bold text-gray-900">A Profile of Excellence</h3>
+            <p className="font-open-sans text-lg text-muted-foreground">
+                As the Director and Chief Consultant Ophthalmologist, Dr. G. Ramesh Baabu is the cornerstone of our clinic's expertise and commitment to quality care.
+            </p>
+            
+            <Card className="bg-gray-50/70">
+                <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                        <Medal className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                            <h4 className="text-lg font-semibold">Vast Surgical Experience</h4>
+                            <p className="font-open-sans text-lg text-muted-foreground mt-2">
+                                He has performed over <span className="font-bold">50,000 surgeries</span>, including complex procedures for cataracts, LASIK, and glaucoma.
+                            </p>
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="bg-gray-50/70">
+                <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                        <Stethoscope className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                            <h4 className="text-lg font-semibold">Distinguished Career</h4>
+                            <p className="font-open-sans text-lg text-muted-foreground mt-2">
+                                Formerly a visiting Consultant at ICF Hospital, Chennai, and a Consultant at both The Hindu Mission Hospital in Tambaram & Rajan Eye Care Hospital in T.Nagar.
+                            </p>
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+            
+            <p className="text-gray-600 italic pt-4 border-t">
+                His dedication to adopting advanced technology and transparent procedures ensures a positive and confident patient experience, making him one of the most trusted names in ophthalmology.
+            </p>
+
+            <Button size="lg" className="mt-4">
+                Learn More About Our Clinic
+                <ChevronRight className="w-5 h-5 ml-2" />
+            </Button>
+          </div>
         </div>
       </div>
     </section>
