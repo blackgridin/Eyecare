@@ -103,9 +103,9 @@ const DoctorsSection = () => {
           </div>
 
           {/* Right Column: Description */}
-          <div className="lg:col-span-3 space-y-6 pt-6 lg:pt-0">
+          <div className="lg:col-span-3 space-y-8 pt-6 lg:pt-0">
             <h3 className="text-3xl font-bold text-gray-900">A Profile of Excellence</h3>
-            <p className="font-open-sans text-lg text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
                 As the Director and Chief Consultant Ophthalmologist, Dr. G. Ramesh Baabu is the cornerstone of our clinic's expertise and commitment to quality care.
             </p>
             
@@ -115,7 +115,7 @@ const DoctorsSection = () => {
                         <Medal className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
                         <div>
                             <h4 className="text-lg font-semibold">Vast Surgical Experience</h4>
-                            <p className="font-open-sans text-lg text-muted-foreground mt-2">
+                            <p className="text-sm text-muted-foreground">
                                 He has performed over <span className="font-bold">50,000 surgeries</span>, including complex procedures for cataracts, LASIK, and glaucoma.
                             </p>
                         </div>
@@ -129,7 +129,7 @@ const DoctorsSection = () => {
                         <Stethoscope className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
                         <div>
                             <h4 className="text-lg font-semibold">Distinguished Career</h4>
-                            <p className="font-open-sans text-lg text-muted-foreground mt-2">
+                            <p className="text-sm text-muted-foreground">
                                 Formerly a visiting Consultant at ICF Hospital, Chennai, and a Consultant at both The Hindu Mission Hospital in Tambaram & Rajan Eye Care Hospital in T.Nagar.
                             </p>
                         </div>
@@ -137,8 +137,10 @@ const DoctorsSection = () => {
                 </CardContent>
             </Card>
             
-            <p className="text-gray-600 italic pt-4 border-t">
+            <p className="text-sm text-muted-foreground space-y-5"> 
+              <i>
                 His dedication to adopting advanced technology and transparent procedures ensures a positive and confident patient experience, making him one of the most trusted names in ophthalmology.
+                </i>
             </p>
 
             <Button size="lg" className="mt-4">
