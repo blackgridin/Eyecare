@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Separator } from "@/components/ui/separator";
 
 export default function PrivacyPolicyPage() {
   const currentYear = new Date().getFullYear();
@@ -23,11 +25,19 @@ export default function PrivacyPolicyPage() {
               </div>
             </CardHeader>
             <CardContent className="prose prose-slate max-w-none dark:prose-invert">
+              <Alert className="mb-6">
+                <AlertDescription>
+                  This policy applies to our WhatsApp-based appointment booking service.
+                </AlertDescription>
+              </Alert>
+
               <p>
                 Shivas Eye Care (<strong>we</strong>, <strong>us</strong>, <strong>our</strong>) operates a WhatsApp-based appointment booking
                 service for patients in India. This Privacy Policy describes how we collect, use, disclose and protect personal
                 data in connection with that service. By using our service, you agree to this Policy.
               </p>
+
+              <Separator className="my-6" />
 
               <h2>1) What We Collect</h2>
               <ul className="list-disc pl-6 space-y-1">
@@ -37,12 +47,16 @@ export default function PrivacyPolicyPage() {
                 <li>Technical logs: IP address, user agent, and webhook request logs (for security and troubleshooting).</li>
               </ul>
 
+              <Separator className="my-6" />
+
               <h2>2) How We Collect</h2>
               <ul className="list-disc pl-6 space-y-1">
                 <li>Directly from you on WhatsApp chats or web forms.</li>
                 <li>Automatically via our WhatsApp Business API / Meta webhooks.</li>
                 <li>From our clinic/hospital staff when they create or modify a booking for you.</li>
               </ul>
+
+              <Separator className="my-6" />
 
               <h2>3) Why We Use Your Data</h2>
               <ul className="list-disc pl-6 space-y-1">
@@ -53,12 +67,16 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p>We do <strong>not</strong> sell your personal data.</p>
 
+              <Separator className="my-6" />
+
               <h2>4) Legal Basis &amp; Consent (India)</h2>
               <p>
                 We rely on your consent and legitimate uses under applicable Indian law, including the Information
                 Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 ("DPDP Act"). You may withdraw
                 consent at any time by contacting us; doing so may affect our ability to provide appointments.
               </p>
+
+              <Separator className="my-6" />
 
               <h2>5) WhatsApp &amp; Third Parties</h2>
               <ul className="list-disc pl-6 space-y-1">
@@ -72,12 +90,16 @@ export default function PrivacyPolicyPage() {
                 </li>
               </ul>
 
+              <Separator className="my-6" />
+
               <h2>6) Sharing &amp; Disclosures</h2>
               <ul className="list-disc pl-6 space-y-1">
                 <li>With doctors/clinics involved in your appointment.</li>
                 <li>With vendors who provide infrastructure or customer support to us (bound by confidentiality and security obligations).</li>
                 <li>When required by applicable law, regulation, or legal process, or to protect rights and safety.</li>
               </ul>
+
+              <Separator className="my-6" />
 
               <h2>7) Storage, Security &amp; Location</h2>
               <ul className="list-disc pl-6 space-y-1">
@@ -89,11 +111,15 @@ export default function PrivacyPolicyPage() {
                 </li>
               </ul>
 
+              <Separator className="my-6" />
+
               <h2>8) Retention</h2>
               <p>
                 We retain personal data only as long as needed for appointment services and legitimate business or legal
                 purposes. Records may be kept for audit, regulatory, or dispute purposes as permitted by law.
               </p>
+
+              <Separator className="my-6" />
 
               <h2>9) Your Rights</h2>
               <p>Subject to applicable law, including the DPDP Act, you may:</p>
@@ -111,11 +137,15 @@ export default function PrivacyPolicyPage() {
                 on requests.
               </p>
 
+              <Separator className="my-6" />
+
               <h2>10) Children’s Data</h2>
               <p>
                 Our service is intended for adults. If you are a parent/guardian and believe your child has provided personal
                 data, please contact us to delete or manage it.
               </p>
+
+              <Separator className="my-6" />
 
               <h2>11) Cookies &amp; Website</h2>
               <p>
@@ -123,11 +153,15 @@ export default function PrivacyPolicyPage() {
                 control cookies via your browser settings.
               </p>
 
+              <Separator className="my-6" />
+
               <h2>12) Changes to This Policy</h2>
               <p>
                 We may update this Policy from time to time. The “Effective Date” above shows the latest revision. Significant
                 changes will be communicated via our usual channels.
               </p>
+
+              <Separator className="my-6" />
 
               <h2>13) Contact &amp; Grievance Officer (India)</h2>
               <p>
