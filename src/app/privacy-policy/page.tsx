@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
               <h2>4) Legal Basis &amp; Consent (India)</h2>
               <p>
                 We rely on your consent and legitimate uses under applicable Indian law, including the Information
-                Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 ("DPDP Act"). You may withdraw
+                Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (&quot;DPDP Act&quot;). You may withdraw
                 consent at any time by contacting us; doing so may affect our ability to provide appointments.
               </p>
 
