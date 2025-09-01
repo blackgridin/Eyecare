@@ -139,7 +139,7 @@ const ContactSection = () => {
                     Contact Us Directly
                   </h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    We're here to help with any questions.
+                    We&apos;re here to help with any questions.
                   </p>
                   <Badge className="bg-warning text-warning-foreground">Call Now</Badge>
                 </CardContent>
