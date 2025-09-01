@@ -134,7 +134,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Shivas Eye Care, Clinic. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-muted hover:text-background transition-colors">
+              <a href="/privacy-policy" className="text-muted hover:text-background transition-colors">
                 Privacy Policy
               </a>
               <a href="#" className="text-muted hover:text-background transition-colors">
