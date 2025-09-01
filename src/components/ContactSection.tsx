@@ -1,4 +1,5 @@
 
+'use client';
 import Image from 'next/image';
 import qrCodeImage from './qrpng.png';
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,8 +15,22 @@ import {
   Calendar,
   Ambulance
 } from "lucide-react";
+import { toast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
+  const handleCallClick = () => {
+    const phoneNumber = '9840088522';
+    navigator.clipboard.writeText(phoneNumber);
+    toast({
+      title: "Phone number copied",
+    });
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:shivaseyecare@gmail.com?subject=Enquiry%20Regarding....";
+  };
+
   const contactInfo = [
     {
       icon: MapPin,
@@ -100,46 +115,31 @@ const ContactSection = () => {
 
           {/* Map & Quick Actions */}
           <div className="space-y-6">
-            {/* Map Placeholder */}
-            <Card className="border-border">
-              <CardContent className="p-0">
-                <div className="h-64 bg-gradient-to-br from-secondary/20 to-primary/10 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Navigation className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h3 className="font-poppins font-semibold text-foreground mb-2">
-                      Interactive Map
-                    </h3>
-                    <p className="text-muted-foreground text-sm">
-                      T. Nagar, Chennai - 600017
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.084008044202!2d80.19826807468893!3d13.093862212186703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5264113914a029%3A0x7fe9a3e69990fb04!2sShivas%20eye%20Care!5e0!3m2!1sen!2sin!4v1756740776493!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
             {/* Quick Action Cards */}
             <div className="grid grid-cols-2 gap-4">
-              <Card className="border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer">
+              <Card className="border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer" onClick={handleEmailClick}>
                 <CardContent className="p-6 text-center">
                   <Mail className="w-8 h-8 text-primary mx-auto mb-3" />
                   <h4 className="font-poppins font-semibold text-foreground mb-2">
                     Mail us your queries
                   </h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Immidiate response via email
+                    Got any enquiries? drop us a mail
                   </p>
-                  <Badge className="bg-primary text-primary-foreground">Available Now</Badge>
+                  <Badge className="bg-primary text-primary-foreground">Enquire Now</Badge>
                 </CardContent>
               </Card>
 
-              <Card className="border-warning/20 bg-warning/5 hover:bg-warning/10 transition-colors cursor-pointer">
+              <Card className="border-warning/20 bg-warning/5 hover:bg-warning/10 transition-colors cursor-pointer" onClick={handleCallClick}>
                 <CardContent className="p-6 text-center">
-                  <Ambulance className="w-8 h-8 text-warning mx-auto mb-3" />
+                  <Phone className="w-8 h-8 text-warning mx-auto mb-3" />
                   <h4 className="font-poppins font-semibold text-foreground mb-2">
-                    Emergency Care
+                    Contact Us Directly
                   </h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    24/7 emergency services
+                    We're here to help with any questions.
                   </p>
                   <Badge className="bg-warning text-warning-foreground">Call Now</Badge>
                 </CardContent>
