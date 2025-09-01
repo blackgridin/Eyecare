@@ -21,9 +21,9 @@ const ContactSection = () => {
       icon: MapPin,
       title: "Address",
       details: [
-        "Shivas Eye Care, Clinic",
+        "Shivas Eye Care",
         "134/1818, 13th Main Rd, Thiruvalluvar Colony,",
-        "Anna Nagar, Chennai, Tamil Nadu 600040",
+        "Anna Nagar, Chennai - 600040,",
         "Tamil Nadu, India"
       ]
     },
@@ -32,7 +32,7 @@ const ContactSection = () => {
       title: "Phone Numbers",
       details: [
         "Main: +91-9840088522",
-        "Emergency: +91-9840174184",
+        // "Emergency: +91-9840174184",
         "Appointment: +91-9363015155",
       ]
     },
@@ -40,10 +40,10 @@ const ContactSection = () => {
       icon: Clock,
       title: "Operating Hours",
       details: [
-        "Monday - Saturday: 9:00 AM - 7:00 PM",
-        "Sunday: 10:00 AM - 5:00 PM",
-        "Emergency: 24/7 Available",
-        "Lunch Break: 1:00 PM - 2:00 PM"
+        "Monday - Saturday: 10:00 AM - 1:00 PM, 4:30 PM - 8:00 PM",
+        "Sunday: 10:00 AM - 1:00 PM",
+        // "Emergency: 24/7 Available",
+        // "Lunch Break: 1:00 PM - 2:00 PM"
       ]
     },
     {
