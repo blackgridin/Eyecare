@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import Link from "next/link";
 import {
   GraduationCap,
   MessageCircle,
@@ -164,10 +165,12 @@ const DoctorsSection = () => {
               </i>
             </p>
 
-            <Button size="lg" className="mt-4">
-              Learn More About Our Clinic
-              <ChevronRight className="w-5 h-5 ml-2" />
-            </Button>
+            <Link href="/about">
+              <Button size="lg" className="mt-4">
+                Learn More About Our Clinic
+                <ChevronRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
