@@ -165,7 +165,7 @@ const DoctorsSection = () => {
               </i>
             </p>
 
-            <Link href="/about">
+            <Link href="/clinic-details">
               <Button size="lg" className="mt-4">
                 Learn More About Our Clinic
                 <ChevronRight className="w-5 h-5 ml-2" />

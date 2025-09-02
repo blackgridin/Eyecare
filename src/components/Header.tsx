@@ -11,7 +11,7 @@ const Header = () => {
 
   const navigation = [
 
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "app/page.tsx" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Doctors", href: "#doctors" },
