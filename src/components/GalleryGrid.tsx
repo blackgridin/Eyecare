@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import ImageModal from "./ImageModal";
 
 interface GalleryImage {
@@ -37,7 +37,7 @@ const GalleryGrid = ({ images, columns = 3, gap = 4 }: GalleryGridProps) => {
   };
 
   const handleImageLoad = (index: number) => {
-    setLoadedImages(prev => new Set([...prev, index]));
+    setLoadedImages(prev => new Set(Array.from(prev).concat(index)));
   };
 
   const gridCols = {
