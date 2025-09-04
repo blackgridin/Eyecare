@@ -9,7 +9,9 @@ import {
   Heart, 
   Shield,
   TrendingUp,
-  Clock
+  Clock,
+  Star,
+  Quote
 } from "lucide-react";
 
 const AboutSection = () => {
@@ -218,28 +220,42 @@ const AboutSection = () => {
         
         {/* Testimonials */}
         <div className="mt-24">
-          <h3 className="font-poppins font-semibold text-3xl text-foreground text-center mb-12">
+          <h3 className="font-poppins font-semibold text-3xl text-foreground text-center mb-4">
             What Our Patients Say
           </h3>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-center mb-12">
+            Real experiences from our valued patients who trust us with their vision via 
+            <i> google reviews</i>
+          </p>
           <div className="relative">
-            <Marquee pauseOnHover>
+            <Marquee pauseOnHover className="[--duration:60s]">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="w-[350px] shrink-0 mx-4 bg-white">
-                  <CardContent className="p-6 h-full">
-                    <div className="flex h-full flex-col">
-                      <p className="font-open-sans text-muted-foreground italic mb-4">
-                        &quot;{testimonial.quote}&quot;
-                      </p>
-                      <div className="mt-auto text-right">
-                        <div className="font-poppins font-semibold text-foreground">{testimonial.name}</div>
+                <Card key={index} className="w-96 mx-4 flex-shrink-0 hover:shadow-lg transition-shadow bg-white">
+                  <CardContent className="p-6 flex flex-col h-full min-h-[280px]">
+                    <div className="flex mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
+                    <Quote className="h-8 w-8 text-primary/20 mb-3" />
+                    <p className="font-open-sans text-muted-foreground mb-4 leading-relaxed flex-grow">
+                      {testimonial.quote}
+                    </p>
+                    <div className="flex items-center mt-auto">
+                      <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                        <Users className="w-5 h-5 text-primary" />
+                      </div>
+                      <div className="flex-grow">
+                        <p className="font-poppins font-semibold text-foreground leading-tight">{testimonial.name}</p>
+                        <p className="font-open-sans text-sm text-muted-foreground leading-tight">Verified Patient</p>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
               ))}
             </Marquee>
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#F6FCFF] to-transparent"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#F6FCFF] to-transparent"></div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/12 bg-gradient-to-r from-[#F6FCFF]"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/12 bg-gradient-to-l from-[#F6FCFF]"></div>
           </div>
         </div>
       </div>
