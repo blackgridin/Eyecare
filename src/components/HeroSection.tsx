@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
+import { motion } from "motion/react";
 import qrCodeImage from './qrpng.png';
-
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -15,79 +15,154 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-6">
-            
-            
-            <h1 className="font-poppins font-bold text-4xl lg:text-6xl text-foreground leading-tight">
+          <motion.div 
+            className="space-y-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <motion.h1 
+              className="font-poppins font-bold text-4xl lg:text-6xl text-foreground leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               Your Vision, 
               <span className="text-primary"> Our Priority</span>
-            </h1>
-            
-            <p className="font-open-sans text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl">
+            </motion.h1>
+            <motion.p 
+              className="font-open-sans text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               Premier eye care with 16+ years of excellence. Advanced treatments, 
               experienced surgeons, and compassionate care for all your vision needs.
-            </p>
+            </motion.p>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-6">
-              <div className="text-center">
+            <motion.div 
+              className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <motion.div 
+                className="text-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: 0.7 }}
+              >
                 <div className="text-2xl font-bold text-primary">50,000+</div>
                 <div className="text-sm text-muted-foreground">Surgeries</div>
-              </div>
-              <div className="text-center">
+              </motion.div>
+              <motion.div 
+                className="text-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: 0.8 }}
+              >
                 <div className="text-2xl font-bold text-primary">16+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              
-              <div className="text-center">
+              </motion.div>
+              <motion.div 
+                className="text-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: 0.9 }}
+              >
                 <div className="text-2xl font-bold text-primary">NABH</div>
-                <div className="text-sm text-muted-foreground">Accreddited </div>
-              </div>
-            </div>
+                <div className="text-sm text-muted-foreground">Accredditated </div>
+              </motion.div>
+            </motion.div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 font-medium" onClick={() => window.open('https://wa.me/919363015155', '_blank')}>
-                <MessageCircle />
-                Book via WhatsApp
-              </Button>
-              
-            </div>
-          </div>
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button size="lg" className="bg-primary hover:bg-primary/90 font-medium" onClick={() => window.open('https://wa.me/919363015155', '_blank')}>
+                  <MessageCircle />
+                  Book via WhatsApp
+                </Button>
+              </motion.div>
+            </motion.div>
+          </motion.div>
 
           {/* WhatsApp QR Code Section */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-border max-w-sm w-full" style={{ color: '#0180CB' }}>
+          <motion.div 
+            className="flex justify-center lg:justify-end"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <motion.div 
+              className="bg-white rounded-2xl p-8 shadow-xl border border-border max-w-sm w-full" 
+              style={{ color: '#0180CB' }}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto" style={{ color: '#0180CB' }}>
-                
+                <motion.div 
+                  className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto" 
+                  style={{ color: '#0180CB' }}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
                   <ScanLine />
-                </div>
+                </motion.div>
                 
-                <h3 className="font-poppins font-semibold text-xl text-foreground">
+                <motion.h3 
+                  className="font-poppins font-semibold text-xl text-foreground"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                >
                   Instant Booking
-                </h3>
+                </motion.h3>
                 
-                <p className="text-muted-foreground text-sm">
+                <motion.p 
+                  className="text-muted-foreground text-sm"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                >
                   Scan QR code to book appointment via WhatsApp
-                </p>
+                </motion.p>
                 {/* QR Code Placeholder */}
-<div className="w-48 h-48 rounded-lg flex items-center justify-center mx-auto">
-  <Image
-    src={qrCodeImage} // Use the imported variable here
-    alt="WhatsApp QR Code for booking"
-    width={192}
-    height={192}
-    className="rounded-lg" 
-  />
-</div>
+                <motion.div 
+                  className="w-48 h-48 rounded-lg flex items-center justify-center mx-auto"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                >
+                  <Image
+                    src={qrCodeImage}
+                    alt="WhatsApp QR Code for booking"
+                    width={192}
+                    height={192}
+                    className="rounded-lg" 
+                  />
+                </motion.div>
 
-                <p className="text-xs text-muted-foreground">
+                <motion.p 
+                  className="text-xs text-muted-foreground"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.9 }}
+                >
                   Or call us directly: <span className="font-medium text-primary">+91-9840088522</span>
-                </p>
+                </motion.p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

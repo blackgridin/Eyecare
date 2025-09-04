@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Phone, Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -10,10 +11,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-
-    { name: "Home", href: "app/page.tsx" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Doctors", href: "#doctors" },
     { name: "Contact", href: "#contact" },
   ];
@@ -34,13 +35,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="font-open-sans text-foreground hover:text-primary transition-colors duration-200"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -75,14 +76,14 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="font-open-sans text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm font-medium text-foreground mb-2">
