@@ -43,31 +43,56 @@ const AboutSection = () => {
   ];
 
   const testimonials = [
-    {
-      name: "Ramesh Kumar",
-      title: "Cataract Surgery Patient",
-      quote: "The care I received at Shivas Eye Care was exceptional. The doctors are not only skilled but also very compassionate. My vision has never been better!",
+{
+      name: "Gokz SS",
+      quote: "Dr.Rameshbabu is known to me for years. Me and my family members have been availing his professional services for last few decades. His hospitality, thorough diagnosis and patient care has been consistently excellent.",
+      rating: 5
     },
     {
-      name: "Sunita Sharma",
-      title: "Glaucoma Patient",
-      quote: "I've been managing my glaucoma with them for years. The team is always so supportive and uses the latest technology. I feel I'm in the best hands.",
+      name: "Grace Nirmala",
+      quote: "Blown away by your dedication and skill! You're not just an ophthalmologist; you're a vision architect, building brighter tomorrows, one perfect prescription and procedure at a time. Truly wow!",
+      rating: 5
     },
     {
-      name: "Amit Patel",
-      title: "LASIK Patient",
-      quote: "Getting LASIK here was the best decision I've ever made. The procedure was quick, painless, and the results are phenomenal. I highly recommend them!",
+      name: "V Ragul",
+      quote: "Clean facility, professional staff, and timely care. Overall, a positive experience with great attention to patient comfort and needs.",
+      rating: 5
     },
     {
-      name: "Priya Singh",
-      title: "Parent of a pediatric patient",
-      quote: "They were amazing with my young daughter. The pediatric ophthalmologist was so patient and made her feel comfortable. A great experience for us.",
+      name: "Moni basiya",
+      quote: "I have visited shivas eye care twice in the past six months and both times, I had a very pleasant experience. Dr. Ramesh Babu is extremely gentle and caring. Highly recommended for all eye care needs.",
+      rating: 5
     },
     {
-      name: "Vijay Reddy",
-      title: "Diabetic Retinopathy Patient",
-      quote: "The comprehensive approach to my diabetic eye care has been a game-changer. They monitor my condition closely and provide the best treatment.",
+      name: "Kalpana Palanichamy",
+      quote: "I've been here many times. I absolutely love everything about this clinic. The doctor and the staff are absolutely sweet and hospitable. My best ophthalmologist visits so far.",
+      rating: 5
     },
+    {
+      name: "Padma Malini",
+      quote: "Thanks to the Doctor and his entire staff for making my mother feel so comfortable during the cataract procedures in both her eyes. She is now able to read and enjoy her hobbies. Grateful to have found this Clinic!",
+      rating: 5
+    },
+    {
+      name: "Gilbert Solomon",
+      quote: "We as family have been Dr.Ramesh Babu's patients for the last 10 Years. The whole team are kind and courteous. We as a family highly recommend his consultation.",
+      rating: 5
+    },
+    {
+      name: "Aarthi Balaji",
+      quote: "I have done lasik surgery here, and my whole experience was very nice. Dr.ramesh babu made me so comfortable during the whole procedure and I completely recommend it.",
+      rating: 5
+    },
+    {
+      name: "Karthikeyan M",
+      quote: "Doctor explained very well to us. The staffs were very kind and guided us properly. Overall the treatment was good.",
+      rating: 5
+    },
+    {
+      name: "Ganeshbabu Sekaran",
+      quote: "Excellent and compassionate service. Doctor explained the issues in a very detailed manner",
+      rating: 5
+    }
   ];
 
   return (
@@ -207,7 +232,6 @@ const AboutSection = () => {
                       </p>
                       <div className="mt-auto text-right">
                         <div className="font-poppins font-semibold text-foreground">{testimonial.name}</div>
-                        <div className="font-open-sans text-sm text-muted-foreground">{testimonial.title}</div>
                       </div>
                     </div>
                   </CardContent>

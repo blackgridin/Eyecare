@@ -8,21 +8,46 @@ import { Camera, Users, Award, Heart } from "lucide-react";
 
 // Gallery images data
 const galleryImages = [
+
+  {
+      src: "/gallery/header.jpeg",
+      alt: "image",
+
+      title: "Sanitised Reception Area"
+    },
+    {
+      src: "/gallery/eq.jpeg",
+      alt: "image",
+      title: "Advanced Diagnostic Equipment"
+    },
+    {
+      src: "/gallery/surg.jpeg",
+      alt: "image",
+      title: "Surgical Suite"
+    },
+    {
+      src: "/gallery/pat.jpeg",
+      alt: "image",
+      title: "Patient Consultation Room"
+    },
+    {
+      src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (5).jpeg",
+      alt: "image",
+      title: "Doctor Desk"
+    },
+    {
+      src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (2).jpeg",
+      alt: "image",
+      title: "Eye Examination Center"
+    },
+
+
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.06.jpeg",
     alt: "Eye examination room - Modern equipment and comfortable patient area",
     title: "Modern Examination Room"
   },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.07.jpeg",
-    alt: "Advanced eye testing equipment for comprehensive diagnosis",
-    title: "Advanced Diagnostic Equipment"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.08.jpeg",
-    alt: "Reception area with friendly staff and comfortable waiting space",
-    title: "Reception & Waiting Area"
-  },
+
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.10.jpeg",
     alt: "Surgical suite equipped with latest ophthalmic technology",
@@ -34,80 +59,16 @@ const galleryImages = [
     title: "Patient Consultation"
   },
   {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (1).jpeg",
-    alt: "Eye care team providing comprehensive treatment",
-    title: "Our Expert Team"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (2).jpeg",
-    alt: "State-of-the-art laser treatment equipment",
-    title: "Laser Treatment Center"
-  },
-  {
     src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (3).jpeg",
     alt: "Comfortable recovery area for post-operative care",
-    title: "Recovery Area"
+    title: "Equipments"
   },
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (4).jpeg",
     alt: "Vision testing area with comprehensive diagnostic tools",
-    title: "Vision Testing Center"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (5).jpeg",
-    alt: "Patient care area with comfortable seating",
-    title: "Patient Care Area"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (6).jpeg",
-    alt: "Medical consultation desk with patient records",
-    title: "Consultation Desk"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (7).jpeg",
-    alt: "Equipment room with advanced ophthalmic instruments",
-    title: "Equipment Room"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (8).jpeg",
-    alt: "Treatment room setup for various eye procedures",
-    title: "Treatment Room"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (9).jpeg",
-    alt: "Patient interaction area with friendly staff",
-    title: "Patient Interaction Area"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27.jpeg",
-    alt: "Optical shop with wide range of eyewear options",
-    title: "Optical Shop"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (1).jpeg",
-    alt: "Doctor explaining treatment options to patient",
-    title: "Treatment Consultation"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (2).jpeg",
-    alt: "Comprehensive eye check-up in progress",
-    title: "Eye Examination"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (3).jpeg",
-    alt: "Modern facility with clean and hygienic environment",
-    title: "Clean & Modern Facility"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (4).jpeg",
-    alt: "Staff room with medical professionals collaborating",
-    title: "Medical Staff Collaboration"
-  },
-  {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (5).jpeg",
-    alt: "Final treatment room with specialized equipment",
-    title: "Specialized Treatment Area"
+    title: "Achievements and Certifications"
   }
+ 
 ];
 
 const stats = [

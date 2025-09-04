@@ -35,24 +35,24 @@ const ClinicDetailsPage = () => {
   // Gallery images from the clinic
   const galleryImages = [
     {
-      src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.06.jpeg",
-      title: "Modern Reception Area"
+      src: "/gallery/header.jpeg",
+      title: "Sanitised Reception Area"
     },
     {
-      src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.07.jpeg",
+      src: "/gallery/eq.jpeg",
       title: "Advanced Diagnostic Equipment"
     },
     {
-      src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (1).jpeg",
+      src: "/gallery/surg.jpeg",
       title: "Surgical Suite"
     },
     {
-      src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (3).jpeg",
+      src: "/gallery/pat.jpeg",
       title: "Patient Consultation Room"
     },
     {
       src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (5).jpeg",
-      title: "Treatment Area"
+      title: "Doctor Desk"
     },
     {
       src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (2).jpeg",
@@ -214,8 +214,7 @@ const ClinicDetailsPage = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold"
+              className="bg-white text-primary hover:bg-gray-100 font-semibold"
               onClick={() => window.open('tel:+919363015155', '_self')}
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -592,8 +591,7 @@ const ClinicDetailsPage = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary font-semibold"
+                className="bg-white text-primary hover:bg-gray-100 font-semibold"
                 onClick={() => window.open('https://maps.google.com/?q=Shivas+Eye+Care+Clinic+Anna+Nagar+Chennai', '_blank')}
               >
                 <MapPin className="mr-2 h-5 w-5" />
