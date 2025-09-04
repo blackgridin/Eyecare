@@ -57,9 +57,10 @@ const HeroSection = () => {
 
           {/* WhatsApp QR Code Section */}
           <div className="flex justify-center lg:justify-end">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-border max-w-sm w-full">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-border max-w-sm w-full" style={{ color: '#0180CB' }}>
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto" style={{ color: '#0180CB' }}>
+                
                   <ScanLine />
                 </div>
                 
