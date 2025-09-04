@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GalleryGrid from "@/components/GalleryGrid";

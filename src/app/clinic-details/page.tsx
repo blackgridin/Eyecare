@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Star, Users, Heart, Eye } from "lucide-react";
-import madhavfImage from "@/components/ui/madhavf.jpeg";
+import madhavfImage from "@/components/ui/madhavf.png";
 import { NumberTicker } from "@/components/magicui/number-ticker";
  
 

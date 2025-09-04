@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import qrCodeImage from './qrpng.png';
 
 import { Button } from "@/components/ui/button";

@@ -12,7 +12,7 @@ import {
   Medal,
   Stethoscope,
 } from "lucide-react";
-import madhavfImage from "./ui/madhavf.jpeg";
+import madhavfImage from "./ui/madhavf.png";
 
 const DoctorsSection = () => {
   const doctor = {
