@@ -103,7 +103,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           
-          <div className="space-y-6 -mt-[250px]">
+          <div className="space-y-6 mt-8 lg:-mt-[250px]">
             <div>
               <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">
                 Established 2002
