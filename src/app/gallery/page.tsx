@@ -23,7 +23,7 @@ const galleryImages = [
     {
       src: "/gallery/surg.jpeg",
       alt: "image",
-      title: "Surgical Suite"
+      title: "Optics Testing Area"
     },
     {
       src: "/gallery/pat.jpeg",
@@ -51,7 +51,7 @@ const galleryImages = [
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.10.jpeg",
     alt: "Surgical suite equipped with latest ophthalmic technology",
-    title: "Surgical Suite"
+    title: "Checkup equipment"
   },
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26.jpeg",
@@ -61,7 +61,7 @@ const galleryImages = [
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (3).jpeg",
     alt: "Comfortable recovery area for post-operative care",
-    title: "Equipments"
+    title: "Mordern Equipments"
   },
   {
     src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (4).jpeg",
@@ -74,7 +74,7 @@ const galleryImages = [
 const stats = [
   { icon: MonitorCog, label: "Equipment", value: "State-of-Art" },
   { icon: Users, label: "Patients Served", value: "10,000+" },
-  { icon: Award, label: "Experience", value: "16+ Years" },
+  { icon: Award, label: "Experience", value: "24+ Years" },
   { icon: Star, label: "google maps & Reviews", value: "High Rated" },
 ];
 
