@@ -1,5 +1,8 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 import { 
   Eye, 
   Zap, 
@@ -12,6 +15,8 @@ import {
 } from "lucide-react";
 
 const ServicesSection = () => {
+  const router = useRouter();
+  
   const services = [
     {
       icon: Eye,
@@ -94,6 +99,7 @@ const ServicesSection = () => {
                 <Button 
                   variant="ghost" 
                   className="mt-auto justify-between group-hover:text-primary p-0 h-auto font-medium"
+                  onClick={() => router.push('/treatments')}
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

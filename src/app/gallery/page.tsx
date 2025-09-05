@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GalleryGrid from "@/components/GalleryGrid";
-import { Camera, Users, Award, Heart } from "lucide-react";
+import { Camera, Users, Award, Heart ,MonitorCog, Star} from "lucide-react";
 
 // Gallery images data
 const galleryImages = [
@@ -72,10 +72,10 @@ const galleryImages = [
 ];
 
 const stats = [
-  { icon: Camera, label: "Equipment", value: "State-of-Art" },
+  { icon: MonitorCog, label: "Equipment", value: "State-of-Art" },
   { icon: Users, label: "Patients Served", value: "10,000+" },
   { icon: Award, label: "Experience", value: "16+ Years" },
-  { icon: Heart, label: "Success Rate", value: "99.5%" },
+  { icon: Star, label: "google maps & Reviews", value: "High Rated" },
 ];
 
 const Gallery = () => {
