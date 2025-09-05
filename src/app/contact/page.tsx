@@ -38,13 +38,14 @@ const ContactPage = () => {
       icon: Phone,
       title: "Call Us",
       details: [
-        "+91 93630 15155",
-        "Available 24/7 for emergencies",
+        "Main: +91-9840088522",
+        "Alt: +91-9840174184", 
+        "Appointment: +91-9363015155",
         "Quick response guaranteed"
       ],
       action: "Call Now",
       actionIcon: Phone,
-      onClick: () => window.open('tel:+919363015155', '_self')
+      onClick: () => window.open('tel:+919840088522', '_self')
     },
     {
       icon: Mail,
@@ -167,7 +168,7 @@ const ContactPage = () => {
                     <Button 
                       variant="outline" 
                       className="flex-1"
-                      onClick={() => window.open('tel:+919363015155', '_self')}
+                      onClick={() => window.open('tel:+919840088522', '_self')}
                     >
                       <Phone className="w-4 h-4 mr-2" />
                       Call to Book

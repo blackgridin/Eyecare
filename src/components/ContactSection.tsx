@@ -18,12 +18,15 @@ import { toast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
   const handleCallClick = () => {
-    const phoneNumber = '9840088522';
-    navigator.clipboard.writeText(phoneNumber);
+    const phoneNumbers = ['9840088522', '9840174184', '9363015155'];
+    const phoneNumbersText = phoneNumbers.join(', ');
+    navigator.clipboard.writeText(phoneNumbersText);
     toast({
-      title: "Phone number copied",
+      title: "Phone numbers copied",
+      description: "All contact numbers copied to clipboard"
     });
-    window.location.href = `tel:${phoneNumber}`;
+    // Default to first number for calling
+    window.location.href = `tel:${phoneNumbers[0]}`;
   };
 
   const handleEmailClick = () => {
@@ -46,7 +49,7 @@ const ContactSection = () => {
       title: "Phone Numbers",
       details: [
         "Main: +91-9840088522",
-        // "Emergency: +91-9840174184",
+        "Alt: +91-9840174184",
         "Appointment: +91-9363015155",
       ]
     },

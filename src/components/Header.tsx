@@ -49,7 +49,7 @@ const Header = () => {
             <div className="text-right">
               <div className="flex items-center space-x-2 text-sm font-medium text-foreground">
                 <Phone className="w-4 h-4" />
-                <span>+91-98765-43210</span>
+                <span>+91-9840088522</span>
               </div>
               <p className="text-xs text-muted-foreground">Emergency: 24/7</p>
             </div>
@@ -87,7 +87,7 @@ const Header = () => {
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm font-medium text-foreground mb-2">
                   <Phone className="w-4 h-4" />
-                  <span>+91-98765-43210</span>
+                  <span>+91-9840088522 / +91-9840174184</span>
                 </div>
                 <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
                   <MessageCircle className="w-4 h-4 mr-2" />

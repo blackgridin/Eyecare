@@ -157,7 +157,7 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.9 }}
                 >
-                  Or call us directly: <span className="font-medium text-primary">+91-9840088522</span>
+                  Or call us directly: <span className="font-medium text-primary">+91-9840088522 / +91-9840174184</span>
                 </motion.p>
               </div>
             </motion.div>
