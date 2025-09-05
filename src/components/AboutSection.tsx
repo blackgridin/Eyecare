@@ -39,7 +39,7 @@ const AboutSection = () => {
   ];
 
   const stats = [
-    { number: "16+", label: "Years of Excellence" },
+    { number: "24+", label: "Years of Excellence" },
     { number: "50,000+", label: "Successful Surgeries" },
     { number: "A+", label: "Highly Rated" }
   ];
@@ -115,7 +115,7 @@ const AboutSection = () => {
               </h2>
               
               <p className="font-open-sans text-lg text-muted-foreground leading-relaxed">
-                Shivas Eye Care:  With over 16 years of dedicated ophthalmology experience and a track record of more than 50,000 successful surgeries, we are committed to providing patients with exceptional consulting services and the best possible care. Our advanced technology and transparent procedures ensures a positive and confident patient experience.
+                Shivas Eye Care:  With over 24 years of dedicated ophthalmology experience and a track record of more than 50,000 successful surgeries, we are committed to providing patients with exceptional consulting services and the best possible care. Our advanced technology and transparent procedures ensures a positive and confident patient experience.
               </p>
             </div>
 

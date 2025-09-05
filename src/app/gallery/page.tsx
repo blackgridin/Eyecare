@@ -59,7 +59,7 @@ const galleryImages = [
     title: "Patient Consultation"
   },
   {
-    src: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (3).jpeg",
+    src: "/gallery/WhatsApp Image 2025-09-02 at 13.35.10.jpeg",
     alt: "Comfortable recovery area for post-operative care",
     title: "Mordern Equipments"
   },

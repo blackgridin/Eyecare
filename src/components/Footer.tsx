@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
             
             <p className="font-open-sans text-muted">
-              Providing exceptional eye care services for over 16 years with advanced 
+              Providing exceptional eye care services for over 24 years with advanced 
               technology and compassionate treatment.
             </p>
 

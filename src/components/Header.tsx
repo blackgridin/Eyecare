@@ -23,13 +23,13 @@ const Header = () => {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <Image src="/favicon.png" alt="Shivas Eye Care Logo" width={40} height={40} />
             <div>
               <h1 className="font-poppins font-bold text-xl text-primary">Shivas Eye Care</h1>
               <p className="text-xs text-muted-foreground -mt-1">Eye Clinic</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

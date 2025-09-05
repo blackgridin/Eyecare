@@ -19,7 +19,7 @@ const DoctorsSection = () => {
     name: "Dr. G. Ramesh Baabu",
     designation: "Consultant Opthalmologist & Director",
     specialization: ["Cataract Surgery", "LASIK", "Glaucoma"],
-    experience: "16+ Years",
+    experience: "24+ Years",
     qualifications: [
       "MBBS, MS (Ophthalmology)",
       "Fellowship in Cornea & Refractive Surgery",

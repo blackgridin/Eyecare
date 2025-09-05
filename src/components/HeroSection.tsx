@@ -35,7 +35,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Premier eye care with 16+ years of excellence. Advanced treatments, 
+              Premier eye care with 24+ years of excellence. Advanced treatments, 
               experienced surgeons, and compassionate care for all your vision needs.
             </motion.p>
 
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 0.8 }}
               >
-                <div className="text-2xl font-bold text-primary">16+</div>
+                <div className="text-2xl font-bold text-primary">24+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </motion.div>
               <motion.div 
