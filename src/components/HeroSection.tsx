@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image';
 import { motion } from "framer-motion";
-import qrCodeImage from './qrpng.png';
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -144,7 +143,7 @@ const HeroSection = () => {
                   transition={{ duration: 0.6, delay: 0.8 }}
                 >
                   <Image
-                    src={qrCodeImage}
+                    src="/qrpng.png"
                     alt="WhatsApp QR Code for booking"
                     width={192}
                     height={192}

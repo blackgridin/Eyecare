@@ -1,7 +1,6 @@
 
 'use client';
 import Image from 'next/image';
-import qrCodeImage from './qrpng.png';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -157,7 +156,7 @@ const ContactSection = () => {
                 <div className="w-40 h-40 bg-gray-100 rounded-lg flex items-center justify-center mx-auto border-2 border-dashed border-gray-300 mb-4">
                   <div className="w-48 h-48 rounded-lg flex items-center justify-center mx-auto">
 <Image
-    src={qrCodeImage} // Use the imported variable here
+    src="/qrpng.png"
     alt="WhatsApp QR Code for booking"
     width={192}
     height={192}
