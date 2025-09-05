@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,6 +16,18 @@ interface ImageModalProps {
 
 const ImageModal = ({ isOpen, onClose, images, currentIndex, onNavigate }: ImageModalProps) => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const handlePrevious = useCallback(() => {
+    const prevIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+    onNavigate(prevIndex);
+    setIsLoading(true);
+  }, [currentIndex, images.length, onNavigate]);
+
+  const handleNext = useCallback(() => {
+    const nextIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
+    onNavigate(nextIndex);
+    setIsLoading(true);
+  }, [currentIndex, images.length, onNavigate]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -36,19 +48,7 @@ const ImageModal = ({ isOpen, onClose, images, currentIndex, onNavigate }: Image
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, currentIndex]);
-
-  const handlePrevious = () => {
-    const prevIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
-    onNavigate(prevIndex);
-    setIsLoading(true);
-  };
-
-  const handleNext = () => {
-    const nextIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
-    onNavigate(nextIndex);
-    setIsLoading(true);
-  };
+  }, [isOpen, onClose, handleNext, handlePrevious]);
 
   const handleBackdropClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {

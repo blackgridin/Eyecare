@@ -86,7 +86,7 @@ const ContactPage = () => {
               Contact <span className="text-primary">Shivas Eye Care</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Ready to take care of your vision? Get in touch with us today. We're here to help with all your eye care needs.
+              Ready to take care of your vision? Get in touch with us today. We&apos;re here to help with all your eye care needs.
             </p>
           </motion.div>
         </div>
