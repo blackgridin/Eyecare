@@ -54,7 +54,7 @@ const TreatmentsPage = () => {
       title: "Cataract Surgery",
       description: "Advanced phacoemulsification with premium IOL options",
       fullDescription: "Our cataract surgery uses the latest phacoemulsification technique with premium intraocular lens (IOL) options. This minimally invasive procedure removes clouded lenses and replaces them with clear artificial lenses, restoring your vision with minimal downtime.",
-      image: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (1).jpeg",
+      image: "/gallery/cat.png",
       icon: Scissors,
       features: [
         "Micro-incision Surgery",
@@ -74,7 +74,7 @@ const TreatmentsPage = () => {
       title: "LASIK Surgery",
       description: "Bladeless laser vision correction for refractive errors",
       fullDescription: "Our LASIK surgery offers bladeless laser vision correction using advanced femtosecond technology. This precise procedure corrects refractive errors like nearsightedness, farsightedness, and astigmatism, providing you with clear vision without glasses or contact lenses.",
-      image: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (3).jpeg",
+      image: "/gallery/lasik.png",
       icon: Zap,
       features: [
         "Femtosecond Technology",
@@ -94,7 +94,7 @@ const TreatmentsPage = () => {
       title: "Glaucoma Treatment",
       description: "Early detection and management of glaucoma",
       fullDescription: "Our comprehensive glaucoma treatment focuses on early detection and effective management of this silent sight thief. Using advanced OCT scanning and personalized treatment plans, we help preserve your vision and prevent further damage from glaucoma.",
-      image: "/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (5).jpeg",
+      image: "/gallery/glaucoma.png",
       icon: Shield,
       features: [
         "OCT Scanning",
@@ -114,7 +114,7 @@ const TreatmentsPage = () => {
       title: "Pediatric Eye Care",
       description: "Specialized care for children's vision problems",
       fullDescription: "Our pediatric eye care services are specially designed for children, providing gentle and comprehensive care for various childhood vision problems. We create a comfortable environment for young patients while delivering expert treatment for conditions like amblyopia, squint, and other pediatric eye disorders.",
-      image: "/gallery/WhatsApp Image 2025-09-02 at 21.46.27 (2).jpeg",
+      image: "/gallery/ped.png",
       icon: Baby,
       features: [
         "Amblyopia Treatment",
@@ -154,8 +154,8 @@ const TreatmentsPage = () => {
   const stats = [
     { number: "50,000+", label: "Successful Procedures", icon: Award },
     { number: "16+", label: "Years Experience", icon: Clock },
-    { number: "99.5%", label: "Success Rate", icon: Target },
-    { number: "24/7", label: "Emergency Care", icon: Activity }
+    { number: "Curated", label: "Service", icon: Target },
+    { number: "Check up", label: "Setup a appoinment instantly", icon: Activity }
   ];
 
   return (
@@ -166,7 +166,7 @@ const TreatmentsPage = () => {
       <section className="relative h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/gallery/header.jpeg"
+            src="/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (6).jpeg"
             alt="Shivas Eye Care Treatments"
             fill
             className="object-cover"
