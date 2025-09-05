@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -26,8 +28,11 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import TreatmentModal from "@/components/TreatmentModal";
 
 const TreatmentsPage = () => {
+  const [selectedTreatment, setSelectedTreatment] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const treatments = [
     {
       id: "comprehensive-eye-examination",
@@ -47,6 +52,18 @@ const TreatmentsPage = () => {
         "Accurate prescription",
         "Personalized care plan",
         "Peace of mind"
+      ],
+      externalLinks: [
+        {
+          title: "American Academy of Ophthalmology - Eye Exams",
+          url: "https://www.aao.org/eye-health/tips-prevention/eye-exams-101",
+          description: "Learn about the importance of comprehensive eye examinations from leading eye care professionals"
+        },
+        {
+          title: "National Eye Institute - Dilated Eye Exam",
+          url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/dilated-eye-exam",
+          description: "Understanding what happens during a dilated eye examination"
+        }
       ]
     },
     {
@@ -56,6 +73,7 @@ const TreatmentsPage = () => {
       fullDescription: "Our cataract surgery uses the latest phacoemulsification technique with premium intraocular lens (IOL) options. This minimally invasive procedure removes clouded lenses and replaces them with clear artificial lenses, restoring your vision with minimal downtime.",
       image: "/gallery/cat.png",
       icon: Scissors,
+      videoUrl: "https://www.youtube.com/embed/n_3cG9oeuNo?si=r9pfyP788q1W7N9w&start=151",
       features: [
         "Micro-incision Surgery",
         "Same Day Procedure",
@@ -67,6 +85,18 @@ const TreatmentsPage = () => {
         "Reduced dependency on glasses",
         "Quick recovery time",
         "Improved quality of life"
+      ],
+      externalLinks: [
+        {
+          title: "American Academy of Ophthalmology - Cataract Surgery",
+          url: "https://www.aao.org/eye-health/diseases/what-is-cataract-surgery",
+          description: "Comprehensive guide to cataract surgery, recovery, and what to expect"
+        },
+        {
+          title: "Mayo Clinic - Cataract Surgery",
+          url: "https://www.mayoclinic.org/tests-procedures/cataract-surgery/about/pac-20384765",
+          description: "Medical information about cataract surgery procedures and outcomes"
+        }
       ]
     },
     {
@@ -76,6 +106,7 @@ const TreatmentsPage = () => {
       fullDescription: "Our LASIK surgery offers bladeless laser vision correction using advanced femtosecond technology. This precise procedure corrects refractive errors like nearsightedness, farsightedness, and astigmatism, providing you with clear vision without glasses or contact lenses.",
       image: "/gallery/lasik.png",
       icon: Zap,
+      videoUrl: "https://www.youtube.com/embed/XPDVmBg5DeE?si=pSvUcAUORMWezmkD&start=180",
       features: [
         "Femtosecond Technology",
         "Custom Wavefront",
@@ -87,6 +118,18 @@ const TreatmentsPage = () => {
         "Immediate results",
         "Long-lasting correction",
         "Enhanced lifestyle"
+      ],
+      externalLinks: [
+        {
+          title: "FDA - LASIK Eye Surgery",
+          url: "https://www.fda.gov/medical-devices/surgery-devices/lasik-eye-surgery",
+          description: "Official FDA information about LASIK surgery safety and effectiveness"
+        },
+        {
+          title: "American Refractive Surgery Council",
+          url: "https://americanrefractivesurgerycouncil.org/lasik/",
+          description: "Comprehensive resource for LASIK surgery information and candidacy"
+        }
       ]
     },
     {
@@ -107,6 +150,23 @@ const TreatmentsPage = () => {
         "Prevented progression",
         "Improved eye pressure",
         "Better quality of life"
+      ],
+      externalLinks: [
+        {
+          title: "Wikipedia - Glaucoma",
+          url: "https://en.wikipedia.org/wiki/Glaucoma",
+          description: "Comprehensive medical information about glaucoma, types, causes, and treatments"
+        },
+        {
+          title: "Glaucoma Research Foundation",
+          url: "https://www.glaucoma.org/glaucoma/",
+          description: "Leading resource for glaucoma education, research, and patient support"
+        },
+        {
+          title: "National Eye Institute - Glaucoma",
+          url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/glaucoma",
+          description: "Government health resource with detailed glaucoma information"
+        }
       ]
     },
     {
@@ -127,6 +187,23 @@ const TreatmentsPage = () => {
         "Improved vision development",
         "Better academic performance",
         "Confident childhood"
+      ],
+      externalLinks: [
+        {
+          title: "American Association for Pediatric Ophthalmology",
+          url: "https://aapos.org/",
+          description: "Professional organization dedicated to children's eye health and vision care"
+        },
+        {
+          title: "Prevent Blindness - Children's Vision",
+          url: "https://preventblindness.org/childrens-vision/",
+          description: "Resources for maintaining and protecting children's vision health"
+        },
+        {
+          title: "KidsHealth - Vision Problems",
+          url: "https://kidshealth.org/en/parents/vision.html",
+          description: "Parent-friendly guide to understanding children's vision problems and treatments"
+        }
       ]
     },
     {
@@ -147,6 +224,23 @@ const TreatmentsPage = () => {
         "Comfortable vision",
         "Lifestyle flexibility",
         "Professional styling"
+      ],
+      externalLinks: [
+        {
+          title: "American Optometric Association - Contact Lenses",
+          url: "https://www.aoa.org/healthy-eyes/vision-and-vision-correction/contact-lenses",
+          description: "Professional guidance on contact lens types, care, and safety"
+        },
+        {
+          title: "FDA - Contact Lens Safety",
+          url: "https://www.fda.gov/medical-devices/contact-lenses/contact-lens-care-systems",
+          description: "Official safety information and regulations for contact lens use"
+        },
+        {
+          title: "Vision Council - Eyewear Trends",
+          url: "https://thevisioncouncil.org/",
+          description: "Latest trends and innovations in eyewear and vision correction"
+        }
       ]
     }
   ];
@@ -344,9 +438,12 @@ const TreatmentsPage = () => {
                   <Button 
                     size="lg" 
                     className="bg-primary hover:bg-primary/90"
-                    onClick={() => window.open('https://wa.me/919363015155', '_blank')}
+                    onClick={() => {
+                      setSelectedTreatment(treatment);
+                      setIsModalOpen(true);
+                    }}
                   >
-                    <MessageCircle className="mr-2 h-5 w-5" />
+                    <Eye className="mr-2 h-5 w-5" />
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -422,6 +519,16 @@ const TreatmentsPage = () => {
 
       <ContactSection />
       <Footer />
+      
+      {/* Treatment Modal */}
+      <TreatmentModal
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+          setSelectedTreatment(null);
+        }}
+        treatment={selectedTreatment}
+      />
     </div>
   );
 };
