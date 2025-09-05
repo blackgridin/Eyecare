@@ -11,6 +11,8 @@ import {
   MessageCircle
 } from "lucide-react";
 
+import Image from "next/image";
+
 const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "#about" },
@@ -36,8 +38,10 @@ const Footer = () => {
           {/* Clinic Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">V</span>
+              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center"
+              style={{color: 'white'}}>
+                <Image src="/favicon.png" alt="Shivas Eye Care Logo" width={30} height={30} />
+
               </div>
               <div>
                 <h3 className="font-poppins font-bold text-xl">Shivas Eye Care</h3>
