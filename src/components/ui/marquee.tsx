@@ -46,12 +46,19 @@ export function Marquee({
       {...props}
       className={cn(
         "group flex overflow-hidden p-2 py-10 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        "transform-gpu will-change-transform", // Hardware acceleration
         {
           "flex-row": !vertical,
           "flex-col": vertical,
         },
         className,
       )}
+      style={{
+        WebkitTransform: 'translateZ(0)', // Force hardware acceleration
+        transform: 'translateZ(0)',
+        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: 'hidden',
+      }}
     >
       {Array(repeat)
         .fill(0)
@@ -64,6 +71,13 @@ export function Marquee({
               "group-hover:[animation-play-state:paused]": pauseOnHover,
               "[animation-direction:reverse]": reverse,
             })}
+            style={{
+              WebkitTransform: 'translateZ(0)',
+              transform: 'translateZ(0)',
+              backfaceVisibility: 'hidden',
+              WebkitBackfaceVisibility: 'hidden',
+              willChange: 'transform',
+            }}
           >
             {children}
           </div>

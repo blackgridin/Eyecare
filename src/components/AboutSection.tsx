@@ -244,9 +244,9 @@ const AboutSection = () => {
             <i> google reviews</i>
           </p>
           <div className="relative">
-            <Marquee pauseOnHover={!isMobile} className="[--duration:60s]">
+            <Marquee pauseOnHover={!isMobile} className="[--duration:60s] [--gap:1rem]">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-96 mx-2 sm:mx-4 flex-shrink-0 hover:shadow-lg transition-shadow bg-white">
+                <Card key={index} className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-96 mx-2 sm:mx-4 flex-shrink-0 hover:shadow-lg transition-shadow bg-white transform-gpu">
                   <CardContent className="p-4 sm:p-6 flex flex-col h-full min-h-[280px]">
                     <div className="flex mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
