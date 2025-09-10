@@ -230,8 +230,8 @@ const AboutSection = () => {
           <div className="relative">
             <Marquee pauseOnHover className="[--duration:60s]">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="w-96 mx-4 flex-shrink-0 hover:shadow-lg transition-shadow bg-white">
-                  <CardContent className="p-6 flex flex-col h-full min-h-[280px]">
+                <Card key={index} className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-96 mx-2 sm:mx-4 flex-shrink-0 hover:shadow-lg transition-shadow bg-white">
+                  <CardContent className="p-4 sm:p-6 flex flex-col h-full min-h-[280px]">
                     <div className="flex mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
