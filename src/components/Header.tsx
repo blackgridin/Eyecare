@@ -5,10 +5,12 @@ import Link from "next/link";
 import { Phone, Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -33,15 +35,23 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="font-open-sans text-foreground hover:text-primary transition-colors duration-200"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`font-open-sans transition-colors duration-200 ${
+                    isActive 
+                      ? "font-semibold" 
+                      : "text-foreground hover:text-primary"
+                  }`}
+                  style={isActive ? { color: '#1E8AB7' } : {}}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Contact & WhatsApp 
@@ -74,16 +84,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="font-open-sans text-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`font-open-sans transition-colors ${
+                      isActive 
+                        ? "font-semibold" 
+                        : "text-foreground hover:text-primary"
+                    }`}
+                    style={isActive ? { color: '#1E8AB7' } : {}}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm font-medium text-foreground mb-2">
                   <Phone className="w-4 h-4" />

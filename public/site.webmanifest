@@ -1,0 +1,32 @@
+{
+  "name": "Shivas Eye Care Clinic",
+  "short_name": "Shivas Eye Care",
+  "description": "Leading eye clinic with 24+ years experience. Expert cataract surgery, LASIK, glaucoma treatment.",
+  "icons": [
+    {
+      "src": "/logo-t.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0180CB",
+  "background_color": "#F6FCFF",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
