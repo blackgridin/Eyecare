@@ -117,8 +117,8 @@ const ClinicDetailsPage = () => {
   const achievements = [
     {
       icon: Award,
-      title: "16+ Years Experience",
-      description: "Over a decade and half of excellence in eye care"
+      title: "24+ Years Experience",
+      description: "Over two decade of excellence in eye care"
     },
     {
       icon: Users2,
@@ -362,14 +362,14 @@ const ClinicDetailsPage = () => {
                     <strong className="text-foreground">Dr. G. Ramesh Baabu</strong> is our Chief Medical Director, and a well experienced Consultant Ophthalmic Surgeon. He is really passionate to help patients with their eye problems.
                   </p>
                   <p>
-                    With over 16 years of experience and having performed more than 50,000 successful surgeries, Dr. Ramesh Baabu has established himself as one of Chennai&apos;s most trusted ophthalmologists.
+                    With over 24 years of experience and having performed more than 50,000 successful surgeries, Dr. Ramesh Baabu has established himself as one of Chennai&apos;s most trusted ophthalmologists.
                   </p>
                 </div>
               </div>
               
               <div className="grid grid-cols-2 gap-4">
                 <Card className="p-4">
-                  <div className="text-2xl font-bold text-primary">16+</div>
+                  <div className="text-2xl font-bold text-primary">24+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </Card>
                 <Card className="p-4">

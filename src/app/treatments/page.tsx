@@ -247,7 +247,7 @@ const TreatmentsPage = () => {
 
   const stats = [
     { number: "50,000+", label: "Successful Procedures", icon: Award },
-    { number: "16+", label: "Years Experience", icon: Clock },
+    { number: "24+", label: "Years Experience", icon: Clock },
     { number: "Curated", label: "Service", icon: Target },
     { number: "Check up", label: "Setup a appoinment instantly", icon: Activity }
   ];

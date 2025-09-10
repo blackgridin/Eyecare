@@ -73,7 +73,7 @@ const galleryImages = [
 
 const stats = [
   { icon: MonitorCog, label: "Equipment", value: "State-of-Art" },
-  { icon: Users, label: "Patients Served", value: "10,000+" },
+  { icon: Users, label: "Patients Served", value: "50,000+" },
   { icon: Award, label: "Experience", value: "24+ Years" },
   { icon: Star, label: "google maps & Reviews", value: "High Rated" },
 ];
