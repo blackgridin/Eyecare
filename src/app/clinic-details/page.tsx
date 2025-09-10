@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import { 
   Eye, 
   Users, 
@@ -32,6 +33,19 @@ import ContactSection from "@/components/ContactSection";
 import { Marquee } from "@/components/ui/marquee";
 
 const ClinicDetailsPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint
+    };
+    
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
   // Gallery images from the clinic
   const galleryImages = [
     {
@@ -506,7 +520,7 @@ const ClinicDetailsPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Marquee pauseOnHover className="[--duration:60s]">
+            <Marquee pauseOnHover={!isMobile} className="[--duration:60s]">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-96 mx-2 sm:mx-4 flex-shrink-0 hover:shadow-lg transition-shadow">
                   <CardContent className="p-4 sm:p-6 flex flex-col h-full min-h-[280px]">
@@ -532,7 +546,7 @@ const ClinicDetailsPage = () => {
                 </Card>
               ))}
             </Marquee>
-            <Marquee pauseOnHover reverse className="[--duration:60s] mt-4">
+            <Marquee pauseOnHover={!isMobile} reverse className="[--duration:60s] mt-4">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-96 mx-2 sm:mx-4 flex-shrink-0 hover:shadow-lg transition-shadow">
                   <CardContent className="p-4 sm:p-6 flex flex-col h-full min-h-[280px]">

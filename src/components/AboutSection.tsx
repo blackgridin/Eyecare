@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
@@ -13,8 +15,22 @@ import {
   Star,
   Quote
 } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const AboutSection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint
+    };
+    
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
   const achievements = [
     {
       icon: Award,
@@ -228,7 +244,7 @@ const AboutSection = () => {
             <i> google reviews</i>
           </p>
           <div className="relative">
-            <Marquee pauseOnHover className="[--duration:60s]">
+            <Marquee pauseOnHover={!isMobile} className="[--duration:60s]">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-96 mx-2 sm:mx-4 flex-shrink-0 hover:shadow-lg transition-shadow bg-white">
                   <CardContent className="p-4 sm:p-6 flex flex-col h-full min-h-[280px]">
