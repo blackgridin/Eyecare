@@ -275,38 +275,38 @@ const ContactPage = () => {
                   title="Shivas Eye Care Clinic Location"
                   className="absolute inset-0"
                 ></iframe>
-                
-                {/* Overlay with clinic info */}
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h4 className="font-semibold text-foreground">Shivas Eye Care Clinic</h4>
-                        <p className="text-sm text-muted-foreground">Anna Nagar, Chennai</p>
-                      </div>
-                      <div className="flex gap-2">
-                        <Button 
-                          size="sm" 
-                          variant="outline"
-                          onClick={() => window.open('https://maps.google.com/?q=Shivas+Eye+Care+Clinic+Anna+Nagar+Chennai', '_blank')}
-                        >
-                          <Navigation className="w-4 h-4 mr-1" />
-                          Directions
-                        </Button>
-                        <Button 
-                          size="sm"
-                          onClick={() => window.open('https://wa.me/919363015155', '_blank')}
-                        >
-                          <MessageCircle className="w-4 h-4 mr-1" />
-                          Contact
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </motion.div>
+
+          {/* Overlay with clinic info */}
+          <div className="mt-8">
+            <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h4 className="font-semibold text-foreground">Shivas Eye Care Clinic</h4>
+                  <p className="text-sm text-muted-foreground">Anna Nagar, Chennai</p>
+                </div>
+                <div className="flex gap-2">
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    onClick={() => window.open('https://maps.google.com/?q=Shivas+Eye+Care+Clinic+Anna+Nagar+Chennai', '_blank')}
+                  >
+                    <Navigation className="w-4 h-4 mr-1" />
+                    Directions
+                  </Button>
+                  <Button 
+                    size="sm"
+                    onClick={() => window.open('https://wa.me/919363015155', '_blank')}
+                  >
+                    <MessageCircle className="w-4 h-4 mr-1" />
+                    Contact
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Additional Info Cards */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
