@@ -172,7 +172,7 @@ const ServicesSection = () => {
                 
                 <Button 
                   variant="ghost" 
-                  className="mt-auto justify-between group-hover:text-primary p-0 h-auto font-medium"
+                  className="mt-auto justify-between group-hover:text-primary p-0 h-auto font-medium hover:"
                   onClick={() => {
                     setSelectedTreatment(treatment);
                     setIsModalOpen(true);

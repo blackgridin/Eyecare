@@ -15,11 +15,11 @@ import Image from "next/image";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Our Services", href: "#services" },
-    { name: "Our Doctors", href: "#doctors" },
-    { name: "Contact", href: "#contact" },
-    { name: "Emergency Care", href: "#emergency" }
+    { name: "About Us", href: "/clinic-details" },
+    { name: "Our Services", href: "/treatments" },
+    { name: "Our Clinic", href: "/#contact" },
+    { name: "Contact", href: "/contact" },
+    { name: "Galary", href: "/gallery" }
   ];
 
   const services = [
@@ -142,10 +142,8 @@ const Footer = () => {
               <a href="/privacy-policy" className="text-muted hover:text-background transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-muted hover:text-background transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-muted hover:text-background transition-colors">
+             
+              <a href="/#about" className="text-muted hover:text-background transition-colors">
                 NABH Certificate
               </a>
             </div>
