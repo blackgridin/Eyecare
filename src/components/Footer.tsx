@@ -138,6 +138,13 @@ const Footer = () => {
             <p className="font-open-sans text-muted text-sm">
               © {new Date().getFullYear()} Shivas Eye Care, Clinic. All rights reserved.
             </p>
+            {/*
+            <p className="font-open-sans text-muted text-sm">
+               {new Date().getFullYear()} Designed and Developed by Blackgrid
+               
+                <a href="https://blackgrid.in" className="text-primary hover:underline ml-1 " target="_blank" rel="noopener noreferrer">Blackgrid</a> 
+            </p>
+            */}
             <div className="flex space-x-6 text-sm">
               <a href="/privacy-policy" className="text-muted hover:text-background transition-colors">
                 Privacy Policy
@@ -147,6 +154,17 @@ const Footer = () => {
                 NABH Certificate
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* BlackGrid Strip */}
+      <div className="bg-black text-white py-2">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col items-center space-y-2">
+            <p className="font-open-sans text-center text-sm">
+              Designed and developed by BlackGrid
+            </p>
+            
           </div>
         </div>
       </div>
