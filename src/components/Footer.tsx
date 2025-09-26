@@ -162,7 +162,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col items-center space-y-2">
             <p className="font-open-sans text-center text-sm">
-              Designed and developed by BlackGrid
+              Developed by BlackGrid
             </p>
             
           </div>
