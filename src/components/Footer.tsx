@@ -1,14 +1,9 @@
-import { Button } from "@/components/ui/button";
+
 import { 
   MapPin, 
   Phone, 
   Mail, 
-  Clock,
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
-  MessageCircle
+  Clock
 } from "lucide-react";
 
 import Image from "next/image";
