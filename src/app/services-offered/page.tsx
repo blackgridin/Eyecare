@@ -30,7 +30,7 @@ import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import TreatmentModal from "@/components/TreatmentModal";
 
-const servicesOfferedPage = () => {
+const ServicesOfferedPage = () => {
   const [selectedTreatment, setSelectedTreatment] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const treatments = [
@@ -533,4 +533,4 @@ const servicesOfferedPage = () => {
   );
 };
 
-export default servicesOfferedPage;
+export default ServicesOfferedPage;
