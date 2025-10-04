@@ -30,7 +30,7 @@ import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import TreatmentModal from "@/components/TreatmentModal";
 
-const TreatmentsPage = () => {
+const servicesOfferedPage = () => {
   const [selectedTreatment, setSelectedTreatment] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const treatments = [
@@ -261,7 +261,7 @@ const TreatmentsPage = () => {
         <div className="absolute inset-0">
           <Image
             src="/gallery/WhatsApp Image 2025-09-02 at 21.46.26 (6).jpeg"
-            alt="Shivas Eye Care Treatments"
+            alt="Shivas Eye Care Services"
             fill
             className="object-cover"
             priority
@@ -280,7 +280,7 @@ const TreatmentsPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Our <span className="text-yellow-300">Treatments</span>
+            Our <span className="text-yellow-300">Services</span>
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl mb-8 leading-relaxed"
@@ -360,7 +360,7 @@ const TreatmentsPage = () => {
               Advanced Eye Care
             </Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Our Specialized Treatments
+              Our Specialized Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Comprehensive eye care services using state-of-the-art technology and expert medical care
@@ -533,4 +533,4 @@ const TreatmentsPage = () => {
   );
 };
 
-export default TreatmentsPage;
+export default servicesOfferedPage;

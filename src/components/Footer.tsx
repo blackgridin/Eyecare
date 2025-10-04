@@ -11,7 +11,7 @@ import Image from "next/image";
 const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/clinic-details" },
-    { name: "Our Services", href: "/treatments" },
+    { name: "Our Services", href: "/services-offered" },
     { name: "Our Clinic", href: "/#contact" },
     { name: "Contact", href: "/contact" },
     { name: "Galary", href: "/gallery" }
