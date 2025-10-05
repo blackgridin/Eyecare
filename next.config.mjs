@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Enable trailing slash for consistent URLs in static export
+  trailingSlash: true,
 };
 
 export default nextConfig;

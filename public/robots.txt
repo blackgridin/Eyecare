@@ -1,14 +1,63 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# Robots.txt for Shivs Eye Care Clinic
+# Optimized for search engine crawling and SEO
 
 User-agent: *
 Allow: /
+
+# Allow all main pages
+Allow: /about
+Allow: /services-offered
+Allow: /doctors
+Allow: /gallery
+Allow: /contact
+Allow: /book-appointment
+Allow: /clinic-details
+Allow: /privacy-policy
+
+# Allow doctor profile pages
+Allow: /doctors/g-ramesh-baabu
+Allow: /doctors/priya-sharma
+Allow: /doctors/arun-patel
+
+# Disallow optometrist redirect pages (they redirect anyway)
+Disallow: /optometrist/
+
+# Disallow admin or private areas (if any exist)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /out/
+
+# Disallow common non-content files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /node_modules/
+
+# Allow search engines to crawl images and assets
+Allow: /gallery/
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.gif
+
+# Crawl delay (be respectful to server resources)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://shivaseyecare.in/sitemap.xml
+
+# Special instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
