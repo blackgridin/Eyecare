@@ -7,17 +7,17 @@ Allow: /
 # Allow all main pages
 Allow: /about
 Allow: /services-offered
-Allow: /doctors
 Allow: /gallery
 Allow: /contact
 Allow: /book-appointment
 Allow: /clinic-details
 Allow: /privacy-policy
 
+# Disallow redirect pages (they redirect to homepage sections)
+Disallow: /doctors
+
 # Allow doctor profile pages
 Allow: /doctors/g-ramesh-baabu
-Allow: /doctors/priya-sharma
-Allow: /doctors/arun-patel
 
 # Disallow optometrist redirect pages (they redirect anyway)
 Disallow: /optometrist/
